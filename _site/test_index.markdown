@@ -1,115 +1,50 @@
+<!--
 [English](http://www.google.com) [한국어](http://www.google.com)
+-->
 
--> ![Oliot_Logo][oliot-logo] <-
-
-Oliot&trade; 프로젝트란?
-========================
+Oliot 프로젝트란?
+------------------------
  
-Oliot 은 바코드, RFID 코드, QR 코드등 전세계 모든 사물에 표준 코드를 할당할 수 있는 국제표준기관인 GS1 의 코드 시스템과 표준 아키텍쳐를 기반으로 바코드/ RFID/ ZigBee/ 6LoWPAN등 다양한 IoT Connectivity 및 프로토콜들을 수용하도록 확장하여, Internet of Things 인프라 플랫폼이 될 수 있는 국제 표준 지향 IoT 플랫폼입니다. GS1의 표준 구현으로도 전세계에 공개될 예정입니다.
+Oliot은 바코드, RFID 코드, QR 코드등 전세계 모든 사물에 표준 코드를 할당할 수 있는 국제표준기관인 GS1 의 코드 시스템과 표준 아키텍쳐를 기반으로 바코드/ RFID/ ZigBee/ 6LoWPAN등 다양한 IoT Connectivity 및 프로토콜들을 수용하도록 확장하여, Internet of Things 인프라 플랫폼이 될 수 있는 국제 표준 지향 IoT 플랫폼입니다. GS1의 표준 구현으로도 전세계에 공개될 예정입니다.
+Oliot은 Open Language for Internet of Things의 약자이며, 또 *olio* 는 핀란드어로 사물이란 뜻이고, 스페인어로는 잡탕밥이라는 의미입니다. *oliot*은 *olio*의 복수형입니다.
 
-Internet of Things
-==================
+GS1과 Auto-ID Labs
+------------------
 Internet of Things라는 용어는 GS1 (http://gs1.org) 의 국제공동협력연구소인 Auto-ID Labs, MIT (http://www.autoidlabs.org) 의 Kevin Ashton에 의해 1999년 처음으로 소개되었습니다. GS1 국제표준은 사물 인식을 위한 바코드, RFID  코드, QR  코드등의 GS1  코드와 이들 식별자를 통해 다양한 응용(유통물류, 식품안전, 의료등)의 글로벌한 운영을 위한 시스템 인프라 기술을 표준화하고 있습니다.
- 
+
 GS1은 국제표준 사물 코드인 GS1 코드의 확장과  GS1 Digital, Internet of Things 표준 기술 개발등을 통해 궁극적으로 B2B 에서 B2C로의 진입, 그리고 Internet of Things 시대의 표준 기술로 자리매김하려 노력하고 있습니다.
  
 전세계 7개 Auto-ID Labs (MIT, Cambridge, ETH Zurich, Keio, Fudan, Adelaide, KAIST) 중 카이스트의 Auto-ID Labs (http://autoidlab.kaist.ac.kr, http://resl.kaist.ac.kr) 는 2002년 RFID 와 무선 센서네트워크 기술 연구를 시작으로 초기 Internet of Things 분야 연구/개발을 시작했으며, 2005년 부터 GS1 기반에 특화된 Internet of Things의 다양한 기술을 본격적으로 개발하기 시작하였습니다.
  
-현재 oliot (GS1 기반 IoT 인프라 플랫폼), snail(6lowpan 기반 IoT connectivity 플랫폼), seahaven (Visual Sensor Networks Cloud 플랫폼), IoTMaaS (IoT mashup 클라우드 서비스 플랫폼), lilliput (IoT SNS 플랫폼)등의 IoT 관련 프로젝트를 진행중이며, 실제 구현과 더불어 연구하고 있습니다.
+현재 Oliot (GS1 기반 IoT 인프라 플랫폼), SNAIL(6LoWPAN 기반 IoT connectivity 플랫폼), SeaHaven (Visual Sensor Networks Cloud 플랫폼), IoTMaaS (IoT mashup 클라우드 서비스 플랫폼), Lilliput (IoT SNS 플랫폼)등의 IoT 관련 프로젝트를 진행중이며, 실제 구현과 더불어 연구하고 있습니다.
 
-Oliot 은 바코드, RFID 코드, QR 코드등 전세계 모든 사물에 표준 코드를 할당할 수 있는 국제표준기관인 GS1 의 코드 시스템과 표준 아키텍쳐를 기반으로 바코드/ RFID/ ZigBee/ 6lowpan등 다양한 IoT Connectivity 및 프로토콜들을 수용하도록 확장하여, Internet of Things 인프라 플랫폼이 될 수 있는 국제 표준 지향 IoT 플랫폼입니다. GS1의 표준 구현으로도 전세계에 공개될 예정입니다.
+Oliot 플랫폼 오픈소스 런칭 워크샵
+---------------------------------
 
-본 웍샵에서는 Auto-ID Lab at KAIST에서 연구하고 있는 다양한 IoT 기술들과 함께, oliot에 대한 상세 기술과 향후 로드맵, 그리고 기존에 수행하고 있던 다양한 파트너들을 통한 여러 응용 도메인에서의 적용 사례에 대해서 소개하고자 합니다.
+Oliot , GS1 국제표준 기반 IoT (사물인터넷) 플랫폼 오픈소스 런칭 워크샵이 2014년 6월 25일 코엑스 컨퍼런스룸 300호에서 개최됩니다. 본 웍샵에서는 Auto-ID Lab at KAIST에서 연구하고 있는 다양한 IoT 기술들과 함께, Oliot에 대한 상세 기술과 향후 로드맵, 그리고 기존에 수행하고 있던 다양한 파트너들을 통한 여러 응용 도메인에서의 적용 사례에 대해서 소개하고자 합니다.
 
-현재 EU IoT6 Smart Building Project, KAIST Dr. M Project, c-ITRC Food Safety System, Stanford Civil Engineering Project, Korea University Hospital Project, Smart Consumer Electronics 등에 적용중에 있습니다.
+현재 Oliot 플랫폼 EU IoT6 Smart Building Project, KAIST Dr. M Project, c-ITRC Food Safety System, Stanford Civil Engineering Project, Korea University Hospital Project, Smart Consumer Electronics 등에 적용중에 있습니다.
  
 Oliot 공개 목적은 기업에서 공개 소스를 활용하여 서비스를 개발하여, 사업화하도록 도움을 주고, 또한 각 기업에서 개발한 비지니스들이 국제 표준 코드와 인프라를 통해 상호 호환성을 확보함으로써 공유경제를 실현할  글로벌한 IoT 생태계가 만들어 질 수 있도록 함에 있습니다. 또한 학교에서는 IoT 연구 툴킷으로도 활용할 수 있습니다.
  
-Oliot Open Source Community 가 만들어 져서, 카이스트 뿐만 아니라, 국내외 많은 개발자들이 함께 개발하고 가꾸어 가는 사랑받는 Open Source가 되었으면 하는게 꿈입니다.
- 
-참, oliot 은 Open Language for Internet of Things의 약자이며, 또 olio 는 핀란드어로 사물이란 뜻이고, 스페인어로는 잡탕밥이라고 하더군요. oliot는 olio의 복수형입니다. ^^
- 
+Oliot Open Source Community 가 만들어져서, 카이스트 뿐만 아니라, 국내외 많은 개발자들이 함께 개발하고 가꾸어 가는 사랑받는 Open Source가 되었으면 하는게 꿈입니다.
+
+다음 링크에서 신청 가능합니다.
+
+[![alt text][banner_img]][banner_link]
+[banner_link]: http://onoffmix.com/event/28387
+[banner_img]: images/logos/banner.png (워크샵 참가 신청 링크)
+
+
 맛뵈기는 아래에서 찾으실 수 있습니다.
- 
+
+**The Three Musketeers, IoT, Cloud, and Big Data: One for All, and All for One**
+
 http://www.slideshare.net/gatordkim/three-mustketeerssamsungswconf2014autoidlabkaistdaeyoung
 
-
+**Oliot 페이스북 그룹**
 
 https://www.facebook.com/groups/oliot/
-
- 
-= 주요 일정 =
- 
-2014년 6월25일 장소: 코엑스 컨퍼런스룸 300호
-
- 
-
-8:30 – 09:00  등록
-
-9:00 – 9:10   오프닝 (김대영, 카이스트)
-
-9:10 – 9:50   IoT, Auto-ID Labs, GS1, and Applications (김대영, 카이스트)
-
- 
-
-Session 1:  GS1 & Auto-ID Labs Research
-
- 
-
-10:00 – 10:40  GS1 EPCglobal framework and oliot Project overview (김성훈, 카이스트)
-
-10:40 – 11:10  Snail Project for IoT Connectivity (하민근, 카이스트)
-
-11:10 – 11:40  GS1 Source, GS1 Korea (이승륜, GS1 Korea)
-
-11:40 – 12:00  GS1 Digital (김재언, 카이스트)
-
- 
-
-Session 2:  Oliot Open Source Project
-
- 
-
-13:00 – 13:30  GS1/oliot llrp & future (허세현, 카이스트)
-
-13:30 – 14:00  GS1/oliot ALE & future (임장관, 카이스트)
-
-14:00 – 14:30  GS1/oliot EPCIS & BigData & future (변재욱, 카이스트)
-
-14:30 – 15:00  GS1/oliot ONS & Discovery & Cloud & future (권기웅, 카이스트)
-
- 
-
-Session 3:  Oliot Applications
-
- 
-
-15:30   - 15:50 Oliot Smart Agriculture/Food Safety System (이명훈, 순천대)
-
-15:50  - 16:10  Oliot Healthcare and SOC management (김대영, 카이스트)
-
-16:10  - 16:30  Oliot Consumer Electronics (이경은, 삼성전자)
-
- 
-
-Session 4:  Discussion
-
- 
-
-16:40   - 18:00 Open source project and community planning
-
- 
-
-2014년 5월 25일
-김대영 드림
-카이스트 전산학과 교수
-Director of Auto-ID Lab at KAIST
-
-
-
-
-
-
 
 
 
@@ -117,17 +52,14 @@ Director of Auto-ID Lab at KAIST
 -------------
 
 <!--
- * Oliot EPCIS [(Link)](www.google.com)
- * Oliot F&C (ALE) [(Link)](www.google.com)
- * Oliot Reader [(Link)](www.google.com)
+ * Oliot EPCIS [(Link)](www.i-see-what-you-did-there.com)
+ * Oliot F&C (ALE) [(Link)](www.y-u-see-html-code.com)
+ * Oliot Reader [(Link)](www.please-wait-until-july-seventh.com)
 -->
 
  * Oliot EPCIS (7월 7일에 공개됩니다.)
  * Oliot F&C (ALE) (7월 7일에 공개됩니다.)
  * Oliot Reader (7월 7일에 공개됩니다.)
-
-[oliot-logo]: http://gs1oliot.github.io/oliot/images/logos/oliot_logo_1_transparent.png
-
 
 <!--
 
