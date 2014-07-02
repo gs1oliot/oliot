@@ -8,7 +8,24 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--<script src="javascripts/jquery-2.1.1.js"></script>-->
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$("a").on("click", function () {
+    var id = $(this).data("section");
+    if (id == "#overview" || id == "#llrpdoc") {
+        $("section:visible").fadeOut(function () {
+        $(id).fadeIn();
+        });
+    }
+	});
+});//]]>  
+</script>    
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -20,8 +37,8 @@
         <p class="header">GS1/EPCglobal based ID-centric IoT Platform</p>
 
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/gs1oliot/oliot/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/gs1oliot/oliot/tarball/master">Download TAR</a></li>
+          <li class="download"><a class="buttons" href="#" data-section="#overview">Overview!</a></li>
+          <li class="download"><a class="buttons" href="#" data-section="#llrpdoc">LLRP-Doc</a></li>
           <li><a class="buttons github" href="https://github.com/gs1oliot/oliot">View On GitHub</a></li>
         </ul>
 
@@ -29,7 +46,7 @@
 
 
       </header>
-      <section>
+      <section style="display: block;" id="overview">
         <p><a href="http://www.google.com">English</a> <a href="http://www.google.com">한국어</a></p>
 
 <h1>
@@ -114,6 +131,80 @@ For further information, please check each subproject pages.</p>
 <li><p>Oliot Open Source Project (<a href="http://www.slideshare.net/gatordkim/oliot-open-source-project">Link</a>)<br><a href="http://www.slideshare.net/gatordkim/oliot-open-source-project"><img src="http://gs1oliot.github.io/oliot/images/slide_summary/sum_oliot_open_source_project.jpg" alt="thumbnail"></a></p></li>
 <li><p>Oliot Facebook Group (<a href="https://www.facebook.com/groups/oliot/">Link</a>)</p></li>
 </ul>
+      </section>
+      <section style="display: none" id="llrpdoc">
+        <h1>
+<a name="oliot-llrp" class="anchor" href="#oliot-llrp"><span class="octicon octicon-link"></span></a>Oliot LLRP</h1>
+
+<h2>
+<a name="contents" class="anchor" href="#contents"><span class="octicon octicon-link"></span></a>CONTENTS</h2>
+
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#download-compilation">Download &amp; Compilation</a></li>
+<li><a href="#project-summaries">Project Summaries</a></li>
+</ul><h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>INTRODUCTION</h2>
+
+<p>Oliot-fc is an implementation of EPCglobal application level events (ALE) interface. It provides APIs for filtering and grouping radio frequency identification (RFID) based data. Clients of Oliot-fc can define filtering and grouping pattern according to EPCglobal ALE interface, and the result is returned back to them.</p>
+
+<p>LLRPReader--+---cxxtest-4.3 (cxxtest framework)<br>
+                                +---libs (pre-built libraries for LLRPReader)<br>
+                                +---LLRP_Reader (Reader impl)<br>
+                                +---LTK (XML2, LTKCPP Library)<br>
+                                +---PR9200_rfid (PR9200 Library)<br>
+                                +---target (build output folder of LLRP Reader and Stubappexample)<br>
+                                +---Tests (cxxtest testsuites)  </p>
+
+<p>You can refer Doxygen document in following URL
+http://~~URL
+DEVELOPER GUIDE
+This section is for the developers.</p>
+
+<h2>
+<a name="download--compilation" class="anchor" href="#download--compilation"><span class="octicon octicon-link"></span></a>DOWNLOAD &amp; COMPILATION</h2>
+
+<ol>
+<li><p>Install Boost Library
+<a href="http://www.boost.org/">http://www.boost.org/</a>
+version: 1.54 or above</p></li>
+<li><p>Install build tools as follows.
+sudo apt-get install libstdc++6
+sudo ldconfig</p></li>
+</ol><p>sudo apt-get install build-essential
+sudo apt-get install automake
+sudo apt-get install autoconf
+sudo apt-get install libtool
+sudo apt-get install xsltproc</p>
+
+<ol>
+<li>Use make command according to the arch type you want to build for.
+x86_64: make ARCH=x86_64 all
+arm-generic-linux-gnueabi: make ARCH=arm all
+arm-fsl-linux-gnueabi: make ARCH=armfs all
+i386: make ARCH=i386 all</li>
+<li>Because -m32 option was not used for x86_64, x86_64/i386 cannot be built in 32bit/64bit computer.</li>
+</ol><p>Each build options cannot coexist, so you should ‘make ARCH=(arch_type) clean’ before you run one of above.</p>
+
+<ol>
+<li>Executables would be generated in the ‘target’ folder. You can run them as follows.
+i) Using LD_LIBRARY_PATH
+Set the LD_LIBRARY_PATH environment variable to the path of boost, LTK, xml2, and other generated library files. You can refer to the run.sh in the project root folder.</li>
+</ol><p>The examples of required library paths for fridge app are follows. If you built it in the machine you would use, then use former one. If you cross-compiled it for arm, then use latter one.
+XML2: libxml2.so (ex. ./LTK/opensource/.libs or ./lib/arm)
+Boost Library: libboost_***.so (ex. /usr/local/lib or ./lib/arm)
+LLRP Wrapper: libllrpreader.so (ex. ./target)
+PR9200 API: librfid_pr9200.so (ex. ./target)</p>
+
+<p>ii) Copying library files
+Set LD_LIBARY_PATH=./:$LD_LIBRARY_PATH, and copy all required library files and configuration files into ‘target’ directory and run in that directory. All libraries should be exist in the current working directory.</p>
+
+<ol>
+<li><p>When you run the executables, you should set the options as follows. You can see options
+./stubappexample -c -l</p></li>
+<li><p>You can change configuration of reader by modifying reader.cfg file in the root folder.</p></li>
+</ol><h2>
+<a name="project-summaries" class="anchor" href="#project-summaries"><span class="octicon octicon-link"></span></a>PROJECT SUMMARIES</h2>
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>

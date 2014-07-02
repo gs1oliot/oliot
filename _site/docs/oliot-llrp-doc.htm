@@ -1,0 +1,603 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Oliot Filtering and Collection</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:바탕;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:굴림;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"MS PMincho";
+	panose-1:2 2 6 0 4 2 5 8 3 4;}
+@font-face
+	{font-family:"\@바탕";
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@굴림";
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@MS PMincho";
+	panose-1:2 2 6 0 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+h1
+	{mso-style-link:"제목 1 Char";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	background:#002060;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:white;
+	text-transform:uppercase;}
+h2
+	{mso-style-link:"제목 2 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	background:#BAF4F0;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	text-transform:uppercase;
+	font-weight:normal;}
+h3
+	{mso-style-link:"제목 3 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:#5A1E34;
+	text-transform:uppercase;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:10.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:20.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"머리글 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"바닥글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:-36.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+span.MsoPageNumber
+	{font-weight:bold;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:10.8pt;
+	margin-bottom:.0001pt;
+	text-indent:-10.8pt;
+	line-height:110%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:#505050;}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoListNumberCxSpFirst, li.MsoListNumberCxSpFirst, div.MsoListNumberCxSpFirst
+	{margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoListNumberCxSpMiddle, li.MsoListNumberCxSpMiddle, div.MsoListNumberCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoListNumberCxSpLast, li.MsoListNumberCxSpLast, div.MsoListNumberCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"제목 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:36.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"제목 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:36.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"제목 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:36.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"제목 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:36.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"본문 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:white;}
+a:link, span.MsoHyperlink
+	{color:#872D4E;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#7F7F7F;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"풍선 도움말 텍스트 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI","sans-serif";
+	color:black;}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"인용 Char";
+	margin-top:10.0pt;
+	margin-right:72.0pt;
+	margin-bottom:4.0pt;
+	margin-left:72.0pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:#A93B61;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	background:#002060;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:white;
+	text-transform:uppercase;
+	font-weight:bold;}
+span.Char
+	{mso-style-name:"풍선 도움말 텍스트 Char";
+	mso-style-link:"풍선 도움말 텍스트";
+	font-family:"Segoe UI","sans-serif";}
+span.Char0
+	{mso-style-name:"제목 Char";
+	mso-style-link:제목;
+	font-family:"Arial","sans-serif";}
+p.ContactInfo, li.ContactInfo, div.ContactInfo
+	{mso-style-name:"Contact Info";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:125%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+span.Char1
+	{mso-style-name:"본문 Char";
+	mso-style-link:본문;
+	color:white;}
+span.Char2
+	{mso-style-name:"머리글 Char";
+	mso-style-link:머리글;}
+span.Char3
+	{mso-style-name:"바닥글 Char";
+	mso-style-link:바닥글;}
+span.1Char
+	{mso-style-name:"제목 1 Char";
+	mso-style-link:"제목 1";
+	font-family:"Arial","sans-serif";
+	color:white;
+	text-transform:uppercase;
+	background:#002060;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"제목 2 Char";
+	mso-style-link:"제목 2";
+	text-transform:uppercase;
+	background:#BAF4F0;}
+span.3Char
+	{mso-style-name:"제목 3 Char";
+	mso-style-link:"제목 3";
+	color:#5A1E34;
+	text-transform:uppercase;}
+span.Char4
+	{mso-style-name:"인용 Char";
+	mso-style-link:인용;
+	color:#A93B61;
+	font-style:italic;}
+.MsoChpDefault
+	{color:black;}
+.MsoPapDefault
+	{margin-top:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 180.0pt 90.0pt 72.0pt;
+	border:solid windowtext 1.0pt;
+	padding:28.0pt 28.0pt 28.0pt 28.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=KO link="#872D4E" vlink="#7F7F7F">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='text-transform:uppercase'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><img
+width=261 height=160 id="Picture 8" src="oliot-llrp-doc.files/image001.png"></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='text-transform:uppercase'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class=Char0><span
+lang=EN-US style='font-size:28.0pt;line-height:115%'>Oliot </span></span><span
+class=Char0><span lang=EN-US style='font-size:28.0pt;line-height:115%'>LLRP</span></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class=Char0><span
+lang=EN-US style='font-size:28.0pt;line-height:115%'>(Oliot-llrp)</span></span><span
+lang=EN-US><br clear=all style='page-break-before:always'>
+</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div style='border:solid #002060 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#002060'>
+
+<p class=MsoTocHeading><span lang=EN-US>Contents</span></p>
+
+</div>
+
+<p class=MsoToc1><span lang=EN-US><span class=MsoHyperlink><a
+href="#_Toc392254959">Introduction<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>0</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc392254960">Developer Guide<span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>0</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc392254961">Download &amp; Compilation<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>0</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US><a
+href="#_Toc392254962">Project Summaries<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>0</span></a></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<span lang=EN-US style='font-size:10.0pt;line-height:115%;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div style='border:solid #002060 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#002060'>
+
+<h1><a name="_Toc392254959"><span lang=EN-US>Introduction</span></a></h1>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Oliot-fc is an implementation of EPCglobal application level events
+(ALE) interface. It provides APIs for filtering and grouping radio frequency
+identification (RFID) based data. Clients of Oliot-fc can define filtering and
+grouping pattern according to EPCglobal ALE interface, and the result is
+returned back to them.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>LLRPReader--+---cxxtest-4.3 (cxxtest framework)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +---libs
+(pre-built libraries for LLRPReader)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +---LLRP_Reader
+(Reader impl)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +---LTK
+(XML2, LTKCPP Library)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +---PR9200_rfid
+(PR9200 Library)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +---target
+(build output folder of LLRP Reader and Stubappexample)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +---Tests
+(cxxtest testsuites)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>You can refer Doxygen document in following URL</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>http://~~URL</span></p>
+
+<div style='border:solid #002060 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#002060'>
+
+<h1><a name="_Toc392254960"><span lang=EN-US>Developer Guide</span></a></h1>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US>This section is for the developers.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div style='border:solid #F1D7E0 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#BAF4F0'>
+
+<h2><a name="_Toc392254961"><span lang=EN-US>Download &amp; Compilation</span></a></h2>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US>1. Install Boost Library </span></p>
+
+<p class=MsoNormal><span lang=EN-US>http://www.boost.org/</span></p>
+
+<p class=MsoNormal><span lang=EN-US>version: 1.54 or above </span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>2. Install build tools as follows.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sudo apt-get install libstdc++6</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sudo ldconfig</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sudo apt-get install build-essential</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sudo apt-get install automake</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sudo apt-get install autoconf</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sudo apt-get install libtool</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sudo apt-get install xsltproc</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>3. Use make command according to the arch
+type you want to build for.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>x86_64: make ARCH=x86_64 all</span></p>
+
+<p class=MsoNormal><span lang=EN-US>arm-generic-linux-gnueabi: make ARCH=arm
+all</span></p>
+
+<p class=MsoNormal><span lang=EN-US>arm-fsl-linux-gnueabi: make ARCH=armfs all</span></p>
+
+<p class=MsoNormal><span lang=EN-US>i386: make ARCH=i386 all</span></p>
+
+<p class=MsoNormal><span lang=EN-US>* Because -m32 option was not used for
+x86_64, x86_64/i386 cannot be built in 32bit/64bit computer.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Each build options cannot coexist, so you
+should ‘make ARCH=(arch_type) clean’ before you run one of above.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>4. Executables would be generated in the
+‘target’ folder. You can run them as follows.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;i) Using LD_LIBRARY_PATH</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Set the LD_LIBRARY_PATH environment
+variable to the path of boost, LTK, xml2, and other generated library files.
+You can refer to the run.sh in the project root folder.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The examples of required library paths for
+fridge app are follows. If you built it in the machine you would use, then use
+former one. If you cross-compiled it for arm, then use latter one.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>XML2: libxml2.so (ex.
+./LTK/opensource/.libs or ./lib/arm)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Boost Library: libboost_***.so (ex.
+/usr/local/lib or ./lib/arm)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>LLRP Wrapper: libllrpreader.so (ex. ./target)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>PR9200 API: librfid_pr9200.so (ex.
+./target)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;ii) Copying library files</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Set LD_LIBARY_PATH=./:$LD_LIBRARY_PATH, and
+copy all required library files and configuration files into ‘target’ directory
+and run in that directory. All libraries should be exist in the current working
+directory.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>5. When you run the executables, you should
+set the options as follows. You can see options</span></p>
+
+<p class=MsoNormal><span lang=EN-US>./stubappexample
+-c&lt;path-to-reader.cfg&gt; -l&lt;path-to-config.llrp&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>6. You can change configuration of reader
+by modifying reader.cfg file in the root folder.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<div style='border:solid #F1D7E0 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#BAF4F0'>
+
+<h2><a name="_Toc392254962"><span lang=EN-US>Project Summaries</span></a></h2>
+
+</div>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
