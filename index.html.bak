@@ -1,79 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Open Language for Internet of Things (Oliot) : " />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Open Language for Internet of Things (Oliot) by gs1oliot</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <!--<script src="javascripts/jquery-2.1.1.js"></script>-->
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
 
-    <title>Open Language for Internet of Things (Oliot)</title>
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$("a").on("click", function () {
+    var id = $(this).data("section");
+    if (id == "#overview" || id == "#llrpdoc") {
+        $("section:visible").fadeOut(function () {
+        $(id).fadeIn();
+        });
+    }
+	});
+});//]]>  
+</script>    
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Open Language for Internet of Things (Oliot)</h1>
+        <p class="header">GS1/EPCglobal based ID-centric IoT Platform</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <!--a id="forkme_banner" href="https://github.com/gs1oliot/oliot">View on GitHub</a-->
+        <ul>
+          <li class="download"><a class="buttons" href="#" data-section="#overview">Overview!</a></li>
+          <li class="download"><a class="buttons" href="#" data-section="#llrpdoc">LLRP-Doc</a></li>
+          <li><a class="buttons github" href="https://github.com/gs1oliot/oliot">View On GitHub</a></li>
+        </ul>
 
-          <h1 id="project_title">Open Language for Internet of Things (Oliot)</h1>
-          <h2 id="project_tagline"></h2>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/gs1oliot">gs1oliot</a></p>
 
-            <!--section id="downloads">
-              <a class="zip_download_link" href="https://github.com/gs1oliot/oliot/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/gs1oliot/oliot/tarball/master">Download this project as a tar.gz file</a>
-            </section-->
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+      </header>
+      <section style="display: block;" id="overview">
+        <p><a href="http://www.google.com">English</a> <a href="http://www.google.com">한국어</a></p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h1>
+<a name="gs1oliot-project-overview" class="anchor" href="#gs1oliot-project-overview"><span class="octicon octicon-link"></span></a>GS1/Oliot Project Overview</h1>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2>
+<a name="contents" class="anchor" href="#contents"><span class="octicon octicon-link"></span></a>CONTENTS</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#download-compilation">Download &amp; Compilation</a></li>
+<li><a href="#project-summaries">Project Summaries</a></li>
+</ul><h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>INTRODUCTION</h2>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>Oliot-fc is an implementation of EPCglobal application level events (ALE) interface. It provides APIs for filtering and grouping radio frequency identification (RFID) based data. Clients of Oliot-fc can define filtering and grouping pattern according to EPCglobal ALE interface, and the result is returned back to them.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>LLRPReader--+---cxxtest-4.3 (cxxtest framework)<br>
+                                +---libs (pre-built libraries for LLRPReader)<br>
+                                +---LLRP_Reader (Reader impl)<br>
+                                +---LTK (XML2, LTKCPP Library)<br>
+                                +---PR9200_rfid (PR9200 Library)<br>
+                                +---target (build output folder of LLRP Reader and Stubappexample)<br>
+                                +---Tests (cxxtest testsuites)  </p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>You can refer Doxygen document in following URL
+http://~~URL
+DEVELOPER GUIDE
+This section is for the developers.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>
+<a name="download--compilation" class="anchor" href="#download--compilation"><span class="octicon octicon-link"></span></a>DOWNLOAD &amp; COMPILATION</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ol>
+<li><p>Install Boost Library
+<a href="http://www.boost.org/">http://www.boost.org/</a>
+version: 1.54 or above</p></li>
+<li><p>Install build tools as follows.
+sudo apt-get install libstdc++6
+sudo ldconfig</p></li>
+</ol><p>sudo apt-get install build-essential
+sudo apt-get install automake
+sudo apt-get install autoconf
+sudo apt-get install libtool
+sudo apt-get install xsltproc</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ol>
+<li>Use make command according to the arch type you want to build for.
+x86_64: make ARCH=x86_64 all
+arm-generic-linux-gnueabi: make ARCH=arm all
+arm-fsl-linux-gnueabi: make ARCH=armfs all
+i386: make ARCH=i386 all</li>
+<li>Because -m32 option was not used for x86_64, x86_64/i386 cannot be built in 32bit/64bit computer.</li>
+</ol><p>Each build options cannot coexist, so you should ‘make ARCH=(arch_type) clean’ before you run one of above.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ol>
+<li>Executables would be generated in the ‘target’ folder. You can run them as follows.
+i) Using LD_LIBRARY_PATH
+Set the LD_LIBRARY_PATH environment variable to the path of boost, LTK, xml2, and other generated library files. You can refer to the run.sh in the project root folder.</li>
+</ol><p>The examples of required library paths for fridge app are follows. If you built it in the machine you would use, then use former one. If you cross-compiled it for arm, then use latter one.
+XML2: libxml2.so (ex. ./LTK/opensource/.libs or ./lib/arm)
+Boost Library: libboost_***.so (ex. /usr/local/lib or ./lib/arm)
+LLRP Wrapper: libllrpreader.so (ex. ./target)
+PR9200 API: librfid_pr9200.so (ex. ./target)</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>ii) Copying library files
+Set LD_LIBARY_PATH=./:$LD_LIBRARY_PATH, and copy all required library files and configuration files into ‘target’ directory and run in that directory. All libraries should be exist in the current working directory.</p>
+
+<ol>
+<li><p>When you run the executables, you should set the options as follows. You can see options
+./stubappexample -c -l</p></li>
+<li><p>You can change configuration of reader by modifying reader.cfg file in the root folder.</p></li>
+</ol><h2>
+<a name="project-summaries" class="anchor" href="#project-summaries"><span class="octicon octicon-link"></span></a>PROJECT SUMMARIES</h2>
       </section>
-    </div>
+      <section style="display: none" id="llrpdoc">
+        <h1>
+<a name="oliot-llrp" class="anchor" href="#oliot-llrp"><span class="octicon octicon-link"></span></a>Oliot LLRP</h1>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Open Language for Internet of Things (Oliot) maintained by <a href="https://github.com/gs1oliot">gs1oliot</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+<h2>
+<a name="contents" class="anchor" href="#contents"><span class="octicon octicon-link"></span></a>CONTENTS</h2>
+
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#download-compilation">Download &amp; Compilation</a></li>
+<li><a href="#project-summaries">Project Summaries</a></li>
+</ul><h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>INTRODUCTION</h2>
+
+<p>Oliot-fc is an implementation of EPCglobal application level events (ALE) interface. It provides APIs for filtering and grouping radio frequency identification (RFID) based data. Clients of Oliot-fc can define filtering and grouping pattern according to EPCglobal ALE interface, and the result is returned back to them.</p>
+
+<p>LLRPReader--+---cxxtest-4.3 (cxxtest framework)<br>
+                                +---libs (pre-built libraries for LLRPReader)<br>
+                                +---LLRP_Reader (Reader impl)<br>
+                                +---LTK (XML2, LTKCPP Library)<br>
+                                +---PR9200_rfid (PR9200 Library)<br>
+                                +---target (build output folder of LLRP Reader and Stubappexample)<br>
+                                +---Tests (cxxtest testsuites)  </p>
+
+<p>You can refer Doxygen document in following URL
+http://~~URL
+DEVELOPER GUIDE
+This section is for the developers.</p>
+
+<h2>
+<a name="download--compilation" class="anchor" href="#download--compilation"><span class="octicon octicon-link"></span></a>DOWNLOAD &amp; COMPILATION</h2>
+
+<ol>
+<li><p>Install Boost Library
+<a href="http://www.boost.org/">http://www.boost.org/</a>
+version: 1.54 or above</p></li>
+<li><p>Install build tools as follows.
+sudo apt-get install libstdc++6
+sudo ldconfig</p></li>
+</ol><p>sudo apt-get install build-essential
+sudo apt-get install automake
+sudo apt-get install autoconf
+sudo apt-get install libtool
+sudo apt-get install xsltproc</p>
+
+<ol>
+<li>Use make command according to the arch type you want to build for.
+x86_64: make ARCH=x86_64 all
+arm-generic-linux-gnueabi: make ARCH=arm all
+arm-fsl-linux-gnueabi: make ARCH=armfs all
+i386: make ARCH=i386 all</li>
+<li>Because -m32 option was not used for x86_64, x86_64/i386 cannot be built in 32bit/64bit computer.</li>
+</ol><p>Each build options cannot coexist, so you should ‘make ARCH=(arch_type) clean’ before you run one of above.</p>
+
+<ol>
+<li>Executables would be generated in the ‘target’ folder. You can run them as follows.
+i) Using LD_LIBRARY_PATH
+Set the LD_LIBRARY_PATH environment variable to the path of boost, LTK, xml2, and other generated library files. You can refer to the run.sh in the project root folder.</li>
+</ol><p>The examples of required library paths for fridge app are follows. If you built it in the machine you would use, then use former one. If you cross-compiled it for arm, then use latter one.
+XML2: libxml2.so (ex. ./LTK/opensource/.libs or ./lib/arm)
+Boost Library: libboost_***.so (ex. /usr/local/lib or ./lib/arm)
+LLRP Wrapper: libllrpreader.so (ex. ./target)
+PR9200 API: librfid_pr9200.so (ex. ./target)</p>
+
+<p>ii) Copying library files
+Set LD_LIBARY_PATH=./:$LD_LIBRARY_PATH, and copy all required library files and configuration files into ‘target’ directory and run in that directory. All libraries should be exist in the current working directory.</p>
+
+<ol>
+<li><p>When you run the executables, you should set the options as follows. You can see options
+./stubappexample -c -l</p></li>
+<li><p>You can change configuration of reader by modifying reader.cfg file in the root folder.</p></li>
+</ol><h2>
+<a name="project-summaries" class="anchor" href="#project-summaries"><span class="octicon octicon-link"></span></a>PROJECT SUMMARIES</h2>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-
-    
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
