@@ -64,11 +64,25 @@ List of Subprojects
 
 Mailing Lists
 -------------
-
+ * LLRP mailing list
+   * oliot-llrp@resl.kaist.ac.kr
+   * https://groups.google.com/a/resl.kaist.ac.kr/forum/#!forum/oliot-llrp
+ * F&C mailing list
+   * oliot-fc@resl.kaist.ac.kr
+   * https://groups.google.com/a/resl.kaist.ac.kr/forum/#!forum/oliot-fc
+ * EPCIS mailing list
+   * oliot-epcis@resl.kaist.ac.kr
+   * https://groups.google.com/a/resl.kaist.ac.kr/forum/#!forum/oliot-epcis
+ * ONS mailing list
+   * oliot-ons@resl.kaist.ac.kr
+   * https://groups.google.com/a/resl.kaist.ac.kr/forum/#!forum/oliot-ons
 
 Credits
 -------
-Oliot is developed at Auto-ID Labs, KAIST, in Daejeon, Korea. 
+Oliot is developed at Auto-ID Labs, KAIST, in Daejeon, Korea.  
+This project was one of the outcomes from a project with Samsung, and was donated as an open source project.  
+This project is a spin-off project of Fosstrak (http://fosstrak.org).
+
 
 License
 -------
