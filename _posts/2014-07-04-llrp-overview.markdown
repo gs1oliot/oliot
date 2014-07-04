@@ -15,7 +15,7 @@ LLRP is a protocol between ALE Server and RFID Reader which,
  * defines capabilities of reader device  
  * defines status reporting and error handling  
 
-![llrp-img-1](images/llrp-pic1.png)  
+![llrp-img-1](images/llrp-pics/llrp-pic1.png)  
 
 ELFIN is abbreviation of Enhanced LLRP-enabling Framework for the INternet of things.
 
@@ -31,7 +31,7 @@ ELFIN is abbreviation of Enhanced LLRP-enabling Framework for the INternet of th
    * Abstracts LLRP messaging between reader and ALE server
 
 
-![llrp-img-3](images/llrp-pic3.png)  
+![llrp-img-3](images/llrp-pics/llrp-pic3.png)  
 
 [![thumbnail](images/viewon.png)][repo_url]  
 [repo_url]: https://github.com/gs1oliot/oliot-llrp
