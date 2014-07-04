@@ -21,7 +21,7 @@ Table of Contents
   * [License](#license)
   * [Supplementary Materials](#supplementary-materials)
  -->
- !TOC
+!TOC
 
 About Oliot
 -----------
