@@ -1,0 +1,79 @@
+<h1 id="toc_0">Oliot LLRP</h1>
+
+<p><img src="images/oliot_logo_1_transparent.png" alt=""></p>
+
+<h2 id="toc_1">CONTENTS</h2>
+
+<ul>
+<li><a href="#toc_2">Introduction</a></li>
+<li><a href="#toc_3">Download &amp; Compilation</a></li>
+<li><a href="#toc_4">Project Summaries</a></li>
+</ul>
+
+<h2 id="toc_2">INTRODUCTION</h2>
+
+<p>Oliot-fc is an implementation of EPCglobal application level events (ALE) interface. It provides APIs for filtering and grouping radio frequency identification (RFID) based data. Clients of Oliot-fc can define filtering and grouping pattern according to EPCglobal ALE interface, and the result is returned back to them.</p>
+
+<p>LLRPReader--+---cxxtest-4.3 (cxxtest framework)<br>
+                                +---libs (pre-built libraries for LLRPReader)<br>
+                                +---LLRP<em>Reader (Reader impl)<br>
+                                +---LTK (XML2, LTKCPP Library)<br>
+                                +---PR9200</em>rfid (PR9200 Library)<br>
+                                +---target (build output folder of LLRP Reader and Stubappexample)<br>
+                                +---Tests (cxxtest testsuites)  </p>
+
+<p>You can refer Doxygen document in following URL
+http://~~URL
+DEVELOPER GUIDE
+This section is for the developers.</p>
+
+<h2 id="toc_3">DOWNLOAD &amp; COMPILATION</h2>
+
+<ol>
+<li><p>Install Boost Library
+http://www.boost.org/
+version: 1.54 or above</p></li>
+<li><p>Install build tools as follows.
+sudo apt-get install libstdc++6
+sudo ldconfig</p></li>
+</ol>
+
+<p>sudo apt-get install build-essential
+sudo apt-get install automake
+sudo apt-get install autoconf
+sudo apt-get install libtool
+sudo apt-get install xsltproc</p>
+
+<ol>
+<li>Use make command according to the arch type you want to build for.
+x86<em>64: make ARCH=x86</em>64 all
+arm-generic-linux-gnueabi: make ARCH=arm all
+arm-fsl-linux-gnueabi: make ARCH=armfs all
+i386: make ARCH=i386 all</li>
+<li>Because -m32 option was not used for x86<em>64, x86</em>64/i386 cannot be built in 32bit/64bit computer.</li>
+</ol>
+
+<p>Each build options cannot coexist, so you should ‘make ARCH=(arch_type) clean’ before you run one of above.</p>
+
+<ol>
+<li>Executables would be generated in the ‘target’ folder. You can run them as follows.
+i) Using LD<em>LIBRARY</em>PATH
+Set the LD<em>LIBRARY</em>PATH environment variable to the path of boost, LTK, xml2, and other generated library files. You can refer to the run.sh in the project root folder.</li>
+</ol>
+
+<p>The examples of required library paths for fridge app are follows. If you built it in the machine you would use, then use former one. If you cross-compiled it for arm, then use latter one.
+XML2: libxml2.so (ex. ./LTK/opensource/.libs or ./lib/arm)
+Boost Library: libboost<em>***.so (ex. /usr/local/lib or ./lib/arm)
+LLRP Wrapper: libllrpreader.so (ex. ./target)
+PR9200 API: librfid</em>pr9200.so (ex. ./target)</p>
+
+<p>ii) Copying library files
+Set LD<em>LIBARY</em>PATH=./:$LD<em>LIBRARY</em>PATH, and copy all required library files and configuration files into ‘target’ directory and run in that directory. All libraries should be exist in the current working directory.</p>
+
+<ol>
+<li><p>When you run the executables, you should set the options as follows. You can see options
+./stubappexample -c<path-to-reader.cfg> -l<path-to-config.llrp></p></li>
+<li><p>You can change configuration of reader by modifying reader.cfg file in the root folder.</p></li>
+</ol>
+
+<h2 id="toc_4">PROJECT SUMMARIES</h2>
