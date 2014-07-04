@@ -215,7 +215,7 @@ td {
 header {
 	background-color: #171717;
 	color: #FDFDFB;
-  width:180px;
+  width:170px;
   float:left;
   position:static;
 	border: 1px solid #000;
@@ -263,7 +263,7 @@ header ul {
 
 header li {
 	list-style-type: none;
-  width:132px;
+  width:142px;
   height:15px;
 	margin-bottom: 12px;
 	line-height: 1em;

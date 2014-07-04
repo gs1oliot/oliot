@@ -1,5 +1,5 @@
 ---
-permalink: llrpdoc.html
+permalink: overview_llrp.html
 layout: default
 
 title: Oliot LLRP Documentation
