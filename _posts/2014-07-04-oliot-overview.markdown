@@ -10,6 +10,7 @@ title: Oliot LLRP Documentation
 GS1/Oliot Project Overview
 ==========================
 
+<!--
 Table of Contents
 -----------------
   * [About Oliot](#about-oliot)
@@ -19,6 +20,8 @@ Table of Contents
   * [Credits](#credits)
   * [License](#license)
   * [Supplementary Materials](#supplementary-materials)
+ -->
+ !TOC
 
 About Oliot
 -----------

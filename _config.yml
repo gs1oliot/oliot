@@ -1,3 +1,12 @@
-markdown: redcarpet
-redcarpet:
-    extensions: [with_toc_data]
+#markdown: redcarpet
+#redcarpet:
+#    extensions: [with_toc_data]
+
+markdown: rdiscount
+rdiscount: 
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+    - generate_toc
+  toc_token: "!TOC"

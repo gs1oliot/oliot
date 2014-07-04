@@ -7,12 +7,14 @@ title: Oliot LLRP Documentation
 
 Oliot LLRP
 ==========
-![](images/oliot_logo_1_transparent.png)
+<!--
 CONTENTS
 --------
  * [Introduction](#toc_2)
  * [Download & Compilation](#toc_3)
  * [Project Summaries](#toc_4)
+ -->
+ !TOC
  
 
 INTRODUCTION
