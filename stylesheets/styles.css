@@ -217,7 +217,7 @@ header {
 	color: #FDFDFB;
   width:180px;
   float:left;
-  /*position:fixed; */
+  position:static;
 	border: 1px solid #000;
 	-webkit-border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
@@ -319,6 +319,7 @@ a.buttons:hover {
 section {
   width:650px;
   float:right;
+  padding-top:20px;
   padding-bottom:50px;
 }
 
@@ -328,7 +329,7 @@ section {
 footer {
   width:170px;
   float:left;
-  position:fixed;
+  position:relative;
   bottom:10px;
 	padding-left: 50px;
 }
