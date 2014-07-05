@@ -36,11 +36,12 @@ The name of this project, *Oliot* is the abbreviation of *Open Language for Inte
 
 GS1 and Auto-ID Labs
 --------------------
+![AutoIDLab](images/Auto-IDLabsLogo.png)  ![GS1](images/gs1-epcglobal.png)  
 The term **Internet of Things** was firstly introduced in 1999 by Kevin Ashton at the Auto-ID Labs, MIT (http://www.autoidlabs.org), which is the primary research partner of GS1.
 
 GS1 provides various types of codes such as bar code, RFID code, QR code for thing identification, and standardizing system infrastructure for global business and applications (supply chain, food safety, medication, etc.).
 
-GS1은 국제표준 사물 코드인 GS1 코드의 확장과  GS1 Digital, Internet of Things 표준 기술 개발등을 통해 궁극적으로 B2B 에서 B2C로의 진입, 그리고 Internet of Things 시대의 표준 기술로 자리매김하려 노력하고 있습니다.
+GS1 is making an effort to hold the position of a standard technology for IoT era as well as B2C from B2B via GS1 code extension, GS1 digital, and IoT standard technology development.
 
 Among seven Auto-ID Labs (MIT, Cambridge, ETH Zurich, Keio, Fudan, Adelaide, KAIST) over the world, Auto-ID Lab, KAIST started research and development in IoT field since 2002, starting from the RFID and wireless sensor network technology. And since 2005, we started to develop various IoT technologies that are specialized to GS1 standard.
 
@@ -51,10 +52,38 @@ We are currently working on following projects:
  * IoTMaaS (IoT Mashup Cloud Service Platform)
  * Lilliput (IoT SNS Platform)
 
+History Before Oliot
+--------------------
+ * Smart Thing Information Service (STIS), since 2005 to 2011
+   * Expand GS1 EPCglobal Network to integrate various sensor network protocols
+   * Successor of EPC Sensor Network
+   * ZigBee, 6LoWPAN/CoAP/Obix integration
+   * Complex Event Processing, etc.
+
+ * GS1 EPCglobal Network on the Cloud for Groceries Trace Framework, since 2013
+   * **Complete Implementation of GS1 EPCglobal Network**
+   * EPCIS Enhanced with NOSQL DB
+   * Cloud Support
+   * ELFIN: Enhanced LLRP-enabling Framework for the INternet of Things
+   * Geo-discovery Service
+   * ONS 2.0.1 implemented
+   * Sponsored by Samsung
+
+ * Oliot open source project, ongoing  
+![current-sit](images/current-sit.png)
+
+
+Oliot Next
+---------- 
+
+ * Oliot will integrate EPC Sensor Network and STIS together with other protocols like Alljoyn, lwM2M, etc. and released later
+ * **July 7 2014** – oliot 1.0 (latest implementation of EPCglobal framework, run on any cloud and supporting mysql
+and cassandra, upgrade of Fosstrak)
+ * **4Q 2014** – oliot 1.1 (provide EPCIS 1.1, strengthened to support GS1 keys, food industry)
+ * **2015** – oliot 2.0 (support internet of things, merging auto-id lab, KAIST’s Epc sensor network, STIS , MQTT, lwM2M, Alljoyn, and more)
 
 List of Subprojects
 -------------------
-
  * Oliot LLRP Reader ([Link](https://github.com/gs1oliot/oliot-llrp))
  * Oliot F&C (ALE) ([Link](https://github.com/gs1oliot/oliot-fc))
  * Oliot EPCIS ([Link](https://github.com/gs1oliot/oliot-epcis))
@@ -86,7 +115,7 @@ This project is a spin-off project of Fosstrak (http://fosstrak.org).
 
 License
 -------
-Because Oliot is a spin-off project of Fosstrak, most of its license follows that of Fosstrak ([LGPL v2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)), except for some original works of this project.  
+Most of license follows that of Fosstrak ([LGPL v2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)), except for some original works of this project.  
 For further information, please check each subproject pages.
 
 
