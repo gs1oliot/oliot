@@ -12,7 +12,7 @@ Oliot-cloudstack is an implementation for running Oliot components on Cloud. Cur
 
 The current infrastructure consists of the following components:
 
-![cs-img-3](images/cs-pics/oliot-cloudstack-img3.png)  
+![thumbnail](images/cs-pics/oliot-cloudstack-img3.png)  
 
  * Load Collector
    * Collects load information from CloudStack hypervisor host.
