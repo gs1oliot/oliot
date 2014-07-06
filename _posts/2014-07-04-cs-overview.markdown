@@ -14,12 +14,12 @@ The current infrastructure consists of the following components:
 
 ![cs-img-1](images/cs-pics/oliot-cloudstack-img3.png)  
 
-* Load Collector
- * Collects load information from CloudStack hypervisor host.
-* Load Predictor
- * Based on the load information collected, predict the future load values.
-* Migration Manager
- * Handling migration process in case of hotspots predicted by the load predictor.
+ * Load Collector
+   * Collects load information from CloudStack hypervisor host.
+ * Load Predictor
+   * Based on the load information collected, predict the future load values.
+ * Migration Manager
+   * Handling migration process in case of hotspots predicted by the load predictor.
 
 [![thumbnail](images/viewon.png)][repo_url]  
 [repo_url]: https://github.com/gs1oliot/oliot-cloudstack
