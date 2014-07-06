@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Open Language for Internet of Things (Oliot) by gs1oliot</title>
+
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script src="javascripts/scale.fix.js"></script>
+  <script src="javascripts/jquery-2.1.1.js"></script>
+
+<script type='text/javascript'>//<![CDATA[ 
+  window.onload = function() {
+    $("#overview").load("overview_oliot.html");
+  };
+  $(window).load(function(){
+    $("a").on("click", function () {      
+      var overview = $("#overview");
+      var filename = $(this).data("section");
+      var repourl = $(this).data("repourl");
+      if (filename != null) {
+        //$("#forkme_banner").remove();
+        overview.fadeOut (function () {
+          overview.load(filename);
+          window.scrollTo(0,0);
+          /*
+          if (repourl != null) {
+            $("<a/>", {
+              id: 'forkme_banner',
+              class: 'forkme_banner_blue',
+              href: repourl,
+              text: 'View on GitHub'
+            }).appendTo("body");
+          }
+          */
+          overview.fadeIn();
+        });
+        
+      }
+    });
+});//]]>  
+</script>    
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+  <div id="eeeef" class="wrapper">
+    <header>
+      <p class="header" style="margin: 0 0 0 0;"><img width=150 src="images/logos/oliot_logo_3_transparent.png" /></p>
+      <h2 class="header" style="color:#FDFDFB">Open Language for Internet of Things</h2>
+      <p class="header">GS1/EPCglobal based ID-centric IoT Platform</p>
+
+      <ul>
+        <li><a class="buttons" href="javascript:void(0)" data-section="overview_oliot.html">Oliot</a></li>
+        <li><a class="buttons" href="javascript:void(0)" data-section="overview_llrp.html" data-repourl="https://github.com/gs1oliot/oliot-llrp">Oliot LLRP</a></li>
+        <li><a class="buttons" href="javascript:void(0)" data-section="overview_fnc.html" data-repourl="https://github.com/gs1oliot/oliot-fc">Oliot F&amp;C</a></li>
+        <li><a class="buttons" href="javascript:void(0)" data-section="overview_epcis.html" data-repourl="https://github.com/gs1oliot/oliot-epcis">Oliot EPCIS</a></li>
+        <li><a class="buttons" href="javascript:void(0)" data-section="overview_ons.html" data-repourl="https://github.com/gs1oliot/oliot-ons">Oliot ONS</a></li>
+        <li><a class="buttons" href="javascript:void(0)" data-section="overview_cs.html" data-repourl="https://github.com/gs1oliot/oliot-cloudstack">Oliot CloudStack</a></li>
+      </ul>
+
+      <p class="header">This project is maintained by <a class="header name" href="https://github.com/gs1oliot">gs1oliot</a></p>
+
+    </header>
+    <section style="display: block;" id="overview" />
+    
+    <footer>
+      <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+    </footer>
+  </div>
+  <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<p><a href="https://github.com/gs1oliot/oliot-llrp"><img src="images/viewon.png" alt="thumbnail" /></a></p>
+
+<a name="Oliot.LLRP..ELFIN..Overview"></a>
+<h1>Oliot LLRP (ELFIN) Overview</h1>
+
+<p>Oliot-LLRP is an implementation of EPCglobal Low Level Reader Protocol (LLRP).</p>
+
+<p><img src="images/llrp-pics/llrp-pic5.png" alt="llrp-img-5" /></p>
+
+<p>LLRP is a protocol between ALE Server and RFID Reader which,</p>
+
+<ul>
+<li>defines control of RFID readers up to low level details of RFID</li>
+<li>defines inventory, read, write, and other access commands for tags</li>
+<li>defines capabilities of reader device</li>
+<li>defines status reporting and error handling</li>
+</ul>
+
+
+<p><img src="images/llrp-pics/llrp-pic1.png" alt="llrp-img-1" /></p>
+
+<p>ELFIN is abbreviation of Enhanced LLRP-enabling Framework for the INternet of things, and is implementation of LLRP standard with some extentions. ELFIN is composed of following components</p>
+
+<p><img src="images/llrp-pics/llrp-pic3.png" alt="llrp-img-3" /></p>
+
+<ul>
+<li>Core Operational Component
+
+<ul>
+<li>Core operations of LLRP and other supplementary operations</li>
+</ul>
+</li>
+<li>Structural Abstraction Component
+
+<ul>
+<li>Abstracts the structure of the real-world reader</li>
+<li>Useful for extension of current LLRP standard</li>
+</ul>
+</li>
+<li>Communicational Abstraction Component
+
+<ul>
+<li>Abstracts the communication with the real-world reader</li>
+<li>Useful for supporting various kinds of Tag Readers</li>
+</ul>
+</li>
+<li>Messaging Component
+
+<ul>
+<li>Abstracts LLRP messaging between reader and ALE server</li>
+</ul>
+</li>
+</ul>
+
+
+<p>ELFIN is able to support adaptation of various kinds of connectivity and protocols. So if a thing has its own unique GS1 code, it can be collected by ELFIN reader with some adaptation and utilized within EPCglobal framework.</p>
+
+<p><img src="images/llrp-pics/llrp-pic4.png" alt="llrp-img-4" /></p>
