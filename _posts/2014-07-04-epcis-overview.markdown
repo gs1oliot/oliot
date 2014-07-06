@@ -7,9 +7,11 @@ title: Oliot EPCIS Documentation
 
 Oliot EPC Information Service (Oliot-EPCIS)
 ===========================================
-Oliot-EPCIS is a repository that stores EPCIS events and Master data. It is an implementation of EPCglobal EPC Information Service standards (EPCIS) using Cassandra distributed database. Accessing Clients query data from the repository via SOAP over HTTP. Capturing Clients sends data to the repository via HTTP.
+Oliot-EPCIS is a repository that stores EPCIS events and Master data. It is an implementation of EPCglobal EPC Information Service standards (EPCIS) using Cassandra distributed database. Accessing Clients query data from the repository via SOAP over HTTP. Capturing Clients sends data to the repository via HTTP.  
 
+  
 ![thumbnail](images/epcis-pics/EPCIS_Architecture.png)
+  
 
 The current implementation is based on Fosstrak, with the replacement of MySQL with Cassandra. As Oliot aims to support Internet of Things, we adopted Cassandra as a NoSQL approach with flexible schema, near linear scalability and good performance.
 We have a plan to develop EPCIS 1.1 with the support for both MySQL and Cassandra. 
