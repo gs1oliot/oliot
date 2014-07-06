@@ -99,6 +99,9 @@ List of Subprojects
 
 Mailing Lists
 -------------
+ * Oliot general mailing list
+   * oliot@resl.kaist.ac.kr
+   * https://groups.google.com/a/resl.kaist.ac.kr/forum/#!forum/oliot
  * LLRP mailing list
    * oliot-llrp@resl.kaist.ac.kr
    * https://groups.google.com/a/resl.kaist.ac.kr/forum/#!forum/oliot-llrp
@@ -136,8 +139,8 @@ You may copy, distribute and modify the software provided that modifications are
 (Summary is referenced from [here](https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-&#40;lgpl-2.1&#41;))
 
 
-Supplementary Materials
------------------------
+Supplementary Materials and Slides
+----------------------------------
  * The Road to Internet of Things ([Link][roadtoiot_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_the_road_to_internet_of_things.jpg)][roadtoiot_url]
 [roadtoiot_url]: http://www.slideshare.net/gatordkim/the-road-to-internet-of-things
@@ -149,31 +152,24 @@ Supplementary Materials
  * GS1 Source ([Link][gs1_source_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_gs1_source.jpg)][gs1_source_url]
 [gs1_source_url]: http://www.slideshare.net/gatordkim/gs1-source
-
  * GS1 Digital ([Link][gs1_digital_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_gs1_digital.jpg)][gs1_digital_url]
 [gs1_digital_url]: http://www.slideshare.net/gatordkim/gs1-digital
-
  * GS1/Oliot LLRP ([Link][gs1_oliot_llrp_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_llrp.jpg)][gs1_oliot_llrp_url]
 [gs1_oliot_llrp_url]: http://www.slideshare.net/gatordkim/gs1oliot-llrp
-
  * GS1/Oliot ALE and Next ([Link][gs1_oliot_ale_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_ale.jpg)][gs1_oliot_ale_url]
 [gs1_oliot_ale_url]: http://www.slideshare.net/gatordkim/gs1oliot-ale-and-next
-
  * GS1/Oliot EPCIS and Next ([Link][gs1_epcis_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_epcis.jpg)][gs1_epcis_url]
 [gs1_epcis_url]: http://www.slideshare.net/gatordkim/gs1oliot-epcis-and-next
-
  * GS1/Oliot ONS/DS and Next ([Link][onsds_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_ons_ds.jpg)][onsds_url]
 [onsds_url]: http://www.slideshare.net/gatordkim/gs1oliot-onsds-and-next
-
  * Oliot Open Source Project ([Link][oliot_open_source_url])  
 [![thumbnail](http://gs1oliot.github.io/oliot/images/slide_summary/sum_oliot_open_source_project.jpg)][oliot_open_source_url]
 [oliot_open_source_url]: http://www.slideshare.net/gatordkim/oliot-open-source-project
-
  * Oliot Facebook Group ([Link](https://www.facebook.com/groups/oliot/))
 
 
