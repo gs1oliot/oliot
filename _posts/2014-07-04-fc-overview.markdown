@@ -11,13 +11,13 @@ Oliot Application Level Event (Oliot-fc)
 Oliot-fc is an implementation of EPCglobal application level events (ALE) interface which provides APIs for filtering and grouping radio frequency identification (RFID) based data.  
 Oliot-fc is forked from the Fosstrak Filtering and Collection project. The objective of this fork is to develop EPCglobal-architecture-based IoT platform under the vision of Auto-ID Lab Korea, KAIST.
 
-[![thumbnail](images/ale.png)]
+![thumbnail](images/ale.png)
 
 In Oliot, oliot-fc is located in the middleware position as shown above. Extending the idea of ALE middleware, we will generalize Oliot-fc middleware role to process stream-based raw data from various devices to generate refined high-level events following GS1 standard.
 
 Currently, we developed the Fosstrak fc to implement ALE interface fully. We compared ours with Fosstrak in the following table. We developed newly 3 APIs: Writing API, Tag Memory API, Access Control API, and developed reader initiated connection feature for IoT use case.
 
-[![thumbnail](images/fc-comparison.png)]
+![thumbnail](images/fc-comparison.png)
 
 There are 4 projects in Oliot-fc.  
 
