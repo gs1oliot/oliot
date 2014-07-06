@@ -13,9 +13,9 @@ Oliot-fc is forked from the Fosstrak Filtering and Collection project. The objec
 
 ![thumbnail](images/ale.png)
 
-In Oliot, oliot-fc is located in the middleware position as shown above. Extending the idea of ALE middleware, we will generalize Oliot-fc middleware role to process stream-based raw data from various devices to generate refined high-level events following GS1 standard.
+In Oliot, oliot-fc is located in the middleware position as shown above. Extending the idea of ALE middleware, we will generalize Oliot-fc middleware role to process stream-based raw data from various devices to generate refined high-level events following GS1 standard. In order to achieve this goal, we are planning to integrate various sensor network protocols (e.g. Zigbee, 6LoWPAN, RESTful device) and other IoT platforms (e.g. MQTT, and AllJoyN). The data from these various devices is abstracted to a concept of stream, for which we will develop stream processing feature. 
 
-Currently, we developed Oliot filtering and collection to implement ALE interface fully based on Fosstrak fc project. We compared ours with Fosstrak in the following table. We developed newly 3 APIs: Writing API, Tag Memory API, Access Control API, and developed reader initiated connection feature for IoT use case.
+In the current stage, we developed Oliot filtering and collection to implement ALE interface fully based on Fosstrak fc project. We compared ours with Fosstrak in the following table. We developed newly 3 APIs: Writing API, Tag Memory API, Access Control API, and developed reader initiated connection feature for IoT use case.
 
 ![thumbnail](images/fc-comparison.png)
 
