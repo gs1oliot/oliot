@@ -5,11 +5,10 @@ layout: default
 title: Oliot LLRP Documentation
 ---
 
-[![thumbnail](images/viewon.png)][repo_url]  
-[repo_url]: https://github.com/gs1oliot/oliot-llrp
 
 Oliot LLRP (ELFIN) Overview
 ===========================
+
 Oliot-LLRP is an implementation of EPCglobal Low Level Reader Protocol (LLRP).  
 
 ![llrp-img-5](images/llrp-pics/llrp-pic5.png) 
@@ -42,3 +41,6 @@ ELFIN is able to support adaptation of various kinds of connectivity and protoco
 
 ![llrp-img-4](images/llrp-pics/llrp-pic4.png)  
 
+
+[![thumbnail](images/viewon.png)][repo_url]  
+[repo_url]: https://github.com/gs1oliot/oliot-llrp
