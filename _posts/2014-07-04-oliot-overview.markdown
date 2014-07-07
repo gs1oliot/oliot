@@ -55,11 +55,15 @@ We are currently working on following projects:
 
 History of Oliot Project
 ------------------------
- * Smart Thing Information Service (STIS), since 2005 to 2011
+ * EPC Sensor Network (EPCSN), since 2005 to 2011
    * Expand GS1 EPCglobal Network to integrate various sensor network protocols
-   * Successor of EPC Sensor Network
-   * ZigBee, 6LoWPAN/CoAP/Obix integration
+   * Adaptation of Zigbee, 6LoWPAN to LLRP protocol
    * Complex Event Processing, etc.
+
+ * Smart Thing Information Service (STIS), since 2011 to 2014
+   * Successor of EPC Sensor Network
+   * Integrate 6LoWPAN/CoAP/Obix protocol to middleware (without LLRP adaptation)
+   * Interoperable with EU FP7 IoT6 project
 
  * GS1 EPCglobal Network on the Cloud for Groceries Trace Framework, since 2013
    * **Complete Implementation of latest GS1 EPCglobal framework**
