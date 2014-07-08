@@ -138,9 +138,11 @@ Related works of this project were funded by following organizations.
 
 License
 -------
-Oliot is distributed under [LGPL-2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) license.  
+Oliot is distributed under [LGPL-2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) license except ONS.  
 You may copy, distribute and modify the software provided that modifications are described inside the modified files and licensed for free under LGPL-2.1.  Derivatives or non-separate (statically-linked) works of the software must be licensed under LGPL, but separate, parent projects don't have to be.  
 (Summary is referenced from [here](https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-&#40;lgpl-2.1&#41;))
+
+For ONS, we open it with Apache license so that users can use it without any restriction. That is because Oliot-ONS consists of the DNS configuration files to implement ONS.   
 
 
 Supplementary Materials and Slides
