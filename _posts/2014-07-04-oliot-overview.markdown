@@ -94,8 +94,6 @@ Oliot Next
 We will integrate Oliot with EPCSN and STIS project in the next release. Specifically, for Oliot-fc, we will generalize Oliot-fc middleware role to process stream-based raw data from various devices to generate refined high-level events following GS1 standard. We are planning to integrate various sensor network protocols (e.g. Zigbee, 6LoWPAN, RESTful device) and other IoT platforms (e.g. MQTT, and AllJoyN). The data from these various devices is abstracted to a concept of stream, for which we will develop stream processing feature. For Oliot-epcis, we will implement EPCIS 1.1 standard which was newly released, and we will define master data of various domains such as mobile health care to promote sharing of EPCIS data in IoT context.
 
 Release plan is as follows,
-
- * **4Q 2014** – Oliot 1.1 (provide EPCIS 1.1, strengthened to support GS1 keys, food industry)
  * **2015** – Oliot 2.0 (support internet of things, merging auto-id lab, KAIST’s Epc sensor network, STIS , MQTT, lwM2M, Alljoyn, and more)
 
 List of Subprojects
