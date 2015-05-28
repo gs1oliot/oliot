@@ -17,7 +17,7 @@ Electronic Product Code Information Service (EPCIS) enables to capture and share
  * Multi-service interface: SOAP, REST and Message Queue
 
 
-![thumbnail](images/epcis-pics/EPCIS_Architecture.png)
+![thumbnail](images/epcis-pics/architecture.png)
 
 [![thumbnail](images/viewon.png)][repo_url]  
 [repo_url]: https://github.com/gs1oliot/oliot-epcis-1.1
