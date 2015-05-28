@@ -55,15 +55,12 @@ We are currently working on following projects:
 
 History of Oliot Project
 ------------------------
- * EPC Sensor Network (EPCSN), since 2005 to 2011
-   * Expand GS1 EPCglobal Network to integrate various sensor network protocols
-   * Adaptation of Zigbee, 6LoWPAN to LLRP protocol
-   * Complex Event Processing, etc.
+ * Oliot 1.0 (Current version)
+   * **Complete implementation of latest GS1 EPCglobal framework**
+   * Run on any clouds that supports mysql and cassandra.
+   * Extended parts of Oliot project compared to Fosstrak is as follows,
 
- * Smart Thing Information Service (STIS), since 2011 to 2014
-   * Successor of EPC Sensor Network
-   * Integrate 6LoWPAN/CoAP/Obix protocol to middleware (without LLRP adaptation)
-   * Interoperable with EU FP7 IoT6 project
+![fosstrak-diff](images/fosstrak-diff-table.png)
 
  * GS1 EPCglobal Network on the Cloud for Groceries Trace Framework, since 2013
    * **Complete Implementation of latest GS1 EPCglobal framework**
@@ -73,12 +70,21 @@ History of Oliot Project
    * Geo-discovery Service
    * ONS 2.0.1 implemented
 
- * Oliot 1.0 (Current version)
-   * **Complete implementation of latest GS1 EPCglobal framework**
-   * Run on any clouds that supports mysql and cassandra.
-   * Extended parts of Oliot project compared to Fosstrak is as follows,
+* Smart Thing Information Service (STIS), since 2011 to 2014
+   * Successor of EPC Sensor Network
+   * Integrate 6LoWPAN/CoAP/Obix protocol to middleware (without LLRP adaptation)
+   * Interoperable with EU FP7 IoT6 project 
 
-![fosstrak-diff](images/fosstrak-diff-table.png)
+* EPC Sensor Network (EPCSN), since 2005 to 2011
+   * Expand GS1 EPCglobal Network to integrate various sensor network protocols
+   * Adaptation of Zigbee, 6LoWPAN to LLRP protocol
+   * Complex Event Processing, etc.
+
+ 
+
+
+
+
 
 Oliot Next
 ---------- 
