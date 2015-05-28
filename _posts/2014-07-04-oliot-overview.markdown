@@ -55,12 +55,16 @@ We are currently working on following projects:
 
 History of Oliot Project
 ------------------------
- * Oliot 1.0 (Current version)
+ * Oliot 1.1
+   * Oliot EPCIS v1.1: the web-service complying with EPCIS v1.1
+    * Clean-slate implementation
+    * Multi-backend: MongoDB (open), MySQL & MariaDB backend (Developed) and Cassandra (TBD)
+    * Multi-service interface: SOAP, REST and Message Queue
+
+ * Oliot 1.0
    * **Complete implementation of latest GS1 EPCglobal framework**
    * Run on any clouds that supports mysql and cassandra.
    * Extended parts of Oliot project compared to Fosstrak is as follows,
-
-![fosstrak-diff](images/fosstrak-diff-table.png)
 
  * GS1 EPCglobal Network on the Cloud for Groceries Trace Framework, since 2013
    * **Complete Implementation of latest GS1 EPCglobal framework**
@@ -80,11 +84,7 @@ History of Oliot Project
    * Adaptation of Zigbee, 6LoWPAN to LLRP protocol
    * Complex Event Processing, etc.
 
- 
-
-
-
-
+![fosstrak-diff](images/fosstrak-diff-table.png)
 
 Oliot Next
 ---------- 
