@@ -83,7 +83,58 @@ History of Oliot Project
    * Adaptation of Zigbee, 6LoWPAN to LLRP protocol
    * Complex Event Processing, etc.
 
-![fosstrak-diff](images/fosstrak-diff-table.png)
+<table>
+  <tr>
+   <td>Component</td>
+   <td>Oliot(%)</td>
+   <td>Other Open Sources (%)</td>
+   <td>Remarks</td>
+  </tr>
+  <tr>
+   <td>TDT Engine</td>
+   <td>10%</td>
+   <td>90%</td>
+   <td>Full-spec development based on Cambridge</td>
+  </tr>
+  <tr>
+   <td>LLRP</td>
+   <td>50%</td>
+   <td>50%</td>
+   <td>Oliot implements LLRP v1.1 (i.e. ELFIN) based on LLRP message definition of Fosstrak</td>
+  </tr>
+  <tr>
+   <td>F & C</td>
+   <td>55%</td>
+   <td>45%</td>
+   <td>Full-spec development based on Fosstrak</td>
+  </tr>
+  <tr>
+   <td>EPCIS</td>
+   <td>100%</td>
+   <td>0%</td>
+   <td>Self-development EPCIS v1.1, MongoDB Backend (Open), MySQL Backend (Developed), Cassandra Backend (TBD)</td>
+  </tr>
+  <tr>
+   <td>ONS</td>
+   <td>100%</td>
+   <td>0%</td>
+   <td>Self-development ONS v2.0.1</td>
+  </tr>
+  <tr>
+   <td>Discovery Service</td>
+   <td>100%</td>
+   <td>0%</td>
+   <td>Oliot implements a geo discovery service solution</td>
+  </tr>
+  <tr>
+   <td>Cloud</td>
+   <td>-</td>
+   <td>-</td>
+   <td>CloudStack based solution research</td>
+  </tr>
+</table>
+
+<!--![fosstrak-diff](images/fosstrak-diff-table.png)-->
 
 Oliot Next
 ---------- 
