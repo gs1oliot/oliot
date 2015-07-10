@@ -56,10 +56,9 @@ We are currently working on following projects:
 History of Oliot Project
 ------------------------
  * Oliot 1.1
-   * Oliot EPCIS v1.1: the web-service complying with EPCIS v1.1
-    * Clean-slate implementation
-    * Multi-backend: MongoDB (open), MySQL & MariaDB backend (Developed) and Cassandra (TBD)
-    * Multi-service interface: SOAP, REST and Message Queue
+   * **Oliot EPCIS v1.1: the web-service complying with EPCIS v1.1 (Clean-slate implementation)**
+   * Multi-backend: MongoDB (open), MySQL & MariaDB backend (Developed) and Cassandra (TBD)
+   * Multi-service interface: SOAP, REST and Message Queue
 
  * Oliot 1.0
    * **Complete implementation of latest GS1 EPCglobal framework**
@@ -100,7 +99,7 @@ List of Subprojects
 -------------------
  * Oliot LLRP Reader ([Link](https://github.com/gs1oliot/oliot-llrp))
  * Oliot F&C (ALE) ([Link](https://github.com/gs1oliot/oliot-fc))
- * Oliot EPCIS ([Link](https://github.com/gs1oliot/oliot-epcis))
+ * Oliot EPCIS ([Link](https://github.com/gs1oliot/oliot-epcis-1.1))
  * Oliot ONS ([Link](https://github.com/gs1oliot/oliot-ons))
  * Oliot Cloudstack ([Link](https://github.com/gs1oliot/oliot-cloudstack))
 
@@ -142,9 +141,12 @@ Related works of this project were funded by following organizations.
 
 License
 -------
+Except cases of EPCIS and ONS,
 Oliot is distributed under [LGPL-2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) license except ONS.  
 You may copy, distribute and modify the software provided that modifications are described inside the modified files and licensed for free under LGPL-2.1.  Derivatives or non-separate (statically-linked) works of the software must be licensed under LGPL, but separate, parent projects don't have to be.  
 (Summary is referenced from [here](https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-&#40;lgpl-2.1&#41;))
+
+As for EPCIS, EPCIS is distributed under Apache license. Please refer to licence file in GitHub.
 
 For ONS, we open it with Apache license so that users can use it without any restriction. That is because Oliot-ONS consists of the DNS configuration files to implement ONS.   
 
