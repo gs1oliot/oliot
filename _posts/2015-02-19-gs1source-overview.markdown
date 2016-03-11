@@ -16,7 +16,7 @@ GS1 Source is a framework for sharing product data in digital world and provides
  * backend repository: MongoDB
  * Service interface: REST (HTTP GET, POST)
 
-![thumbnail](images/gs1source-pics/DataAggregator_v2_2.png)
+![thumbnail](images/gs1source-pics/DataAggregator_v2_3.png)
 
 [![thumbnail](images/viewon.png)][repo_url]  
 [repo_url]: https://github.com/gs1oliot/gs1source
