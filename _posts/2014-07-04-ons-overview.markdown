@@ -16,4 +16,4 @@ For more information, please refer to ONS 2.0.1 specification [http://www.gs1.or
 
 
 [![thumbnail](images/viewon.png)][repo_url]  
-[repo_url]: https://github.com/gs1oliot/oliot-ons
+[repo_url]: https://github.com/gs1oliot/oliot-ons-1.1
