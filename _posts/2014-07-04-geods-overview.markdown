@@ -16,4 +16,4 @@ Firstly, events captured from things are registered to Oliot-ds through EPCISs. 
 
 
 [![thumbnail](images/viewon.png)][repo_url]  
-[repo_url]: https://github.com/gs1oliot/oliot-geods
+[repo_url]: https://github.com/gs1oliot/oliot-ds-1.1

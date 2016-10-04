@@ -151,7 +151,7 @@ List of Subprojects
  * Oliot LLRP Reader ([Link](https://github.com/gs1oliot/oliot-llrp))
  * Oliot F&C (ALE) ([Link](https://github.com/gs1oliot/oliot-fc))
  * Oliot EPCIS v1.1 ([Link](https://github.com/gs1oliot/oliot-epcis-1.1)), v1.0 ([Link](https://github.com/gs1oliot/oliot-epcis))
- * Oliot ONS ([Link](https://github.com/gs1oliot/oliot-ons))
+ * Oliot ONS ([Link](https://github.com/gs1oliot/oliot-ons-1.1))
  * Oliot Cloudstack ([Link](https://github.com/gs1oliot/oliot-cloudstack))
 
 
