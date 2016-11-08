@@ -20,4 +20,4 @@ Electronic Product Code Information Service (EPCIS) enables to capture and share
 ![thumbnail](images/epcis-pics/architecture.png)
 
 [![thumbnail](images/viewon.png)][repo_url]  
-[repo_url]: https://github.com/gs1oliot/oliot-epcis-1.1
+[repo_url]: https://github.com/JaewookByun/epcis
