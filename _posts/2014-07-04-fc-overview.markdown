@@ -5,7 +5,7 @@ layout: default
 title: Oliot F&C Documentation
 ---
 
-Oliot Application Level Event (Oliot ALE)
+Oliot ALE (Oliot Application Level Event)
 ========================================
 
 Oliot-ALE is an implementation of EPCglobal application level events (ALE) interface which provides APIs for filtering and grouping radio frequency identification (RFID) based data.  
