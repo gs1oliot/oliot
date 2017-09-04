@@ -31,5 +31,14 @@ There are 4 projects in Oliot-ALE.
    * ALE web based client program for Oliot-ALE. The compiled binaries can be embedded to the servlet container Tomcat, and they can be access by web browser. There is no modification on this project, but we will implement web based client for Writing, Tag Memory, and Access Control API as our future work.
 
 
+There are contributors for this project.
+
+ * Janggwan Im, Ph.D student of KAIST.
+
+ * Wondeuk Yoon, Ph.D student of KAIST.
+
+
+
+
 [![thumbnail](images/viewon.png)][repo_url]  
 [repo_url]: https://github.com/gs1oliot/oliot-fc
