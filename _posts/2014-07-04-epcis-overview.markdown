@@ -11,7 +11,7 @@ Electronic Product Code Information Service (EPCIS) enables to capture and share
 
 Oliot EPCIS is a Java Web Service implementing the EPCIS standard in terms of its data type and interface standards and additionally supports additional features to broaden its scope from RFID to the Internet of Things.
 
-* Specification
+### Specification ###
  * Java, Dynamic Web Service
  * EPCIS v1.2 compliance
  * Maven and Spring framework
@@ -19,12 +19,12 @@ Oliot EPCIS is a Java Web Service implementing the EPCIS standard in terms of it
  * Supported web service interface: SOAP, REST
  * Supported message format: XML, JSON
 
-* Contributors
+### Contributors ###
  * Jaewook Byun, Maintainer  : bjw0829@kaist.ac.kr, bjw0829@gmail.com
  * Yalew Kidane, MySQL Backend Extension : yalewkidane@kaist.ac.kr, yalewkidane@gmail.com
  * Sungpil Woo, Capture Interface Extension : woosungpil@kaist.ac.kr, woosungpil7@gmail.com
 
-![thumbnail](images/epcis-pics/architecture.png)
+![thumbnail](images/epcis-pics/architecture2.png)
 
 [![thumbnail](images/viewon.png)][repo_url]  
 [repo_url]: https://github.com/JaewookByun/epcis
