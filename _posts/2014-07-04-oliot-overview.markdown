@@ -56,6 +56,9 @@ We are currently working on following projects:
 History of Oliot Project
 ------------------------
  * Oliot 1.1
+   * Oliot EPCIS v1.2: the web-service complying with EPCIS v1.2
+   * A
+ * Oliot 1.1
    * **Oliot EPCIS v1.1: the web-service complying with EPCIS v1.1 (Clean-slate implementation)**
    * Multi-backend: MongoDB (open), MySQL & MariaDB backend (Developed) and Cassandra (TBD)
    * Multi-service interface: SOAP, REST and Message Queue
