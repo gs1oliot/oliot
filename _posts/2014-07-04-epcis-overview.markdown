@@ -7,15 +7,22 @@ title: Oliot EPCIS Documentation
 
 Oliot EPC Information Service (Oliot EPCIS)
 ===========================================
-Electronic Product Code Information Service (EPCIS) enables to capture and share EPC-based event ( Basically RFID Tag event ). With EPCIS, event producer (e.g. RFID middleware) generates and sends events complying with EPCIS Document XML schema into EPCIS Repository Then, these events can be globally shared with given queries.
+Electronic Product Code Information Service (EPCIS) enables to capture and share visibility event and masterdata depicting lifecycle of everyday-objects. With EPCIS, event producer generates and sends events complying with EPCIS Document XML schema into EPCIS Repository Then, these events can be globally shared with given queries.
+
+Oliot EPCIS is a Java Web Service implementing the EPCIS standard in terms of its data type and interface standards and additionally supports additional features to broaden its scope from RFID to the Internet of Things.
 
 * Specification
  * Java, Dynamic Web Service
- * EPCIS v1.1 compliance
+ * EPCIS v1.2 compliance
  * Maven and Spring framework
- * Multi-backend: MongoDB (Open), MySQL & MariaDB (Developed) and Cassandra (TDB)
- * Multi-service interface: SOAP, REST and Message Queue
+ * Supported backends: MongoDB, Relational DBMSs (MySQL, MariaDB, Oracle, and PostgreSQL)
+ * Supported web service interface: SOAP, REST
+ * Supported message format: XML, JSON
 
+* Contributors
+ * Jaewook Byun, Maintainer  : bjw0829@kaist.ac.kr, bjw0829@gmail.com
+ * Yalew Kidane, MySQL Backend Extension : yalewkidane@kaist.ac.kr, yalewkidane@gmail.com
+ * Sungpil Woo, Capture Interface Extension : woosungpil@kaist.ac.kr, woosungpil7@gmail.com
 
 ![thumbnail](images/epcis-pics/architecture.png)
 
