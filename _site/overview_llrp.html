@@ -1,0 +1,57 @@
+<h1 id="oliot-llrp-low-level-reader-protocol-reader">Oliot LLRP (Low Level Reader Protocol) Reader</h1>
+
+<p>Oliot LLRP Reader is a reader implementation that supports EPCglobal Low Level Reader Protocol (LLRP).</p>
+
+<p><img src="images/llrp-pics/llrp-pic5.png" alt="llrp-img-5" /></p>
+
+<p>LLRP is a protocol between ALE Server and RFID Reader which,</p>
+
+<ul>
+  <li>defines control of RFID readers up to low level details of RFID</li>
+  <li>defines inventory, read, write, and other access commands for tags</li>
+  <li>defines capabilities of reader device</li>
+  <li>defines status reporting and error handling</li>
+</ul>
+
+<p><img src="images/llrp-pics/llrp-pic1.png" alt="llrp-img-1" /></p>
+
+<p>Oliot LLRP Reader is a reader implementation that supports LLRP standard with some extentions. It is composed of following components</p>
+
+<p><img src="images/llrp-pics/llrp-pic3.png" alt="llrp-img-3" /></p>
+
+<ul>
+  <li>Core Operational Component
+    <ul>
+      <li>Core operations of LLRP and other supplementary operations</li>
+    </ul>
+  </li>
+  <li>Structural Abstraction Component
+    <ul>
+      <li>Abstracts the structure of the real-world reader</li>
+      <li>Useful for extension of current LLRP standard</li>
+    </ul>
+  </li>
+  <li>Communicational Abstraction Component
+    <ul>
+      <li>Abstracts the communication with the real-world reader</li>
+      <li>Useful for supporting various kinds of Tag Readers</li>
+    </ul>
+  </li>
+  <li>Messaging Component
+    <ul>
+      <li>Abstracts LLRP messaging between reader and ALE server</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Oliot LLRP Reader is able to support adaptation of various kinds of connectivity and protocols. So if a thing has its own unique GS1 code, it can be collected by reader with some adaptation and utilized within EPCglobal framework.</p>
+
+<p><img src="images/llrp-pics/llrp-pic4.png" alt="llrp-img-4" /></p>
+
+<h2 id="contributors">Contributors</h2>
+<ul>
+  <li>Sehyeon Heo, Ph.D student of KAIST</li>
+</ul>
+
+<p><a href="https://github.com/gs1oliot/oliot-llrp"><img src="images/viewon.png" alt="thumbnail" /></a></p>
+

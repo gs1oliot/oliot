@@ -2,11 +2,20 @@
 #redcarpet:
 #    extensions: [with_toc_data]
 
-markdown: rdiscount
-rdiscount: 
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-    - generate_toc
-  toc_token: "!TOC"
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+
+plugins:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed

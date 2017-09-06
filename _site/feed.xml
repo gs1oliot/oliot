@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-06T09:23:33+09:00</updated><id>http://localhost:4000/</id><entry><title type="html">Oliot GS1 Source Documentation</title><link href="http://localhost:4000/overview_gs1source.html" rel="alternate" type="text/html" title="Oliot GS1 Source Documentation" /><published>2015-02-19T00:00:00+09:00</published><updated>2015-02-19T00:00:00+09:00</updated><id>http://localhost:4000/gs1source-overview</id><content type="html" xml:base="http://localhost:4000/overview_gs1source.html">&lt;h1 id=&quot;oliot-gs1-source&quot;&gt;Oliot GS1 Source&lt;/h1&gt;
+&lt;p&gt;GS1 Source is a framework for sharing product data in digital world and provides standard schema for specific data according to standard. In Business-to-Consumer perspective, GS1 seeks that brand owners are able to pursue the rising value of the brand by building trust with consumers, developers can more efficiently develop applications that can ensure delivering authentic data to consumers, and consumers can obtain authentic and accurate data and trust that digital data, no matter wherever they are.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Specification&lt;/li&gt;
+  &lt;li&gt;Java web service&lt;/li&gt;
+  &lt;li&gt;TSD v1.1 compliance&lt;/li&gt;
+  &lt;li&gt;Maven and Spring framework&lt;/li&gt;
+  &lt;li&gt;backend repository: MongoDB&lt;/li&gt;
+  &lt;li&gt;Service interface: REST (HTTP GET, POST)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/gs1source-pics/DataAggregator_v2_3.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hyeeun Cho, Master student of KAIST&lt;/li&gt;
+  &lt;li&gt;Gaurav Kalra, Master student of KAIST&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gs1oliot/gs1source&quot;&gt;&lt;img src=&quot;images/viewon.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Oliot GS1 Source GS1 Source is a framework for sharing product data in digital world and provides standard schema for specific data according to standard. In Business-to-Consumer perspective, GS1 seeks that brand owners are able to pursue the rising value of the brand by building trust with consumers, developers can more efficiently develop applications that can ensure delivering authentic data to consumers, and consumers can obtain authentic and accurate data and trust that digital data, no matter wherever they are.</summary></entry><entry><title type="html">Oliot Object Name Service Documentation</title><link href="http://localhost:4000/overview_ons.html" rel="alternate" type="text/html" title="Oliot Object Name Service Documentation" /><published>2014-07-04T00:00:00+09:00</published><updated>2014-07-04T00:00:00+09:00</updated><id>http://localhost:4000/ons-overview</id><content type="html" xml:base="http://localhost:4000/overview_ons.html">&lt;h1 id=&quot;oliot-ons-object-name-service&quot;&gt;Oliot ONS (Object Name Service)&lt;/h1&gt;
+
+&lt;p&gt;Object Name Service (ONS) is service look-up system on top of Directory Naming Service (DNS). It is located in higher layer of EPC global architecture [http://www.gs1.org/epcglobal]. Briefly, this service have a responsibility of looking up services related to given Electronic Product Code (EPC).&lt;/p&gt;
+
+&lt;p&gt;It should be noted that ONS fully leverages DNS. As a service publisher, you need to add/delete/update service lists related to give EPC as a NAPTR Record form [http://www.ietf.org/rfc/rfc2915.txt], leading clients to obtain them by ordinary DNS query (e.g. &lt;a href=&quot;http://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html&quot;&gt;Java JNDI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For more information, please refer to &lt;a href=&quot;http://www.gs1.org/gsmp/kc/epcglobal/ons/ons_2_0_1-standard-20130131.pdf&quot;&gt;ONS 2.0.1 specification&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Kiwoong Kwon, Ph.D student of KAIST&lt;/li&gt;
+  &lt;li&gt;Wondeuk Yoon, Ph.D student of KAIST&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gs1oliot/oliot-ons-1.1&quot;&gt;&lt;img src=&quot;images/viewon.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Oliot ONS (Object Name Service)</summary></entry><entry><title type="html">Oliot LLRP Documentation</title><link href="http://localhost:4000/overview_oliot.html" rel="alternate" type="text/html" title="Oliot LLRP Documentation" /><published>2014-07-04T00:00:00+09:00</published><updated>2014-07-04T00:00:00+09:00</updated><id>http://localhost:4000/oliot-overview</id><content type="html" xml:base="http://localhost:4000/overview_oliot.html">&lt;!--
+[English](http://www.google.com) [한국어](http://www.google.com)
+--&gt;
+&lt;h1 class=&quot;no_toc&quot; id=&quot;oliot-project&quot;&gt;Oliot Project&lt;/h1&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-oliot&quot; id=&quot;markdown-toc-about-oliot&quot;&gt;About Oliot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gs1-and-auto-id-labs&quot; id=&quot;markdown-toc-gs1-and-auto-id-labs&quot;&gt;GS1 and Auto-ID Labs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#history-of-oliot-project&quot; id=&quot;markdown-toc-history-of-oliot-project&quot;&gt;History of Oliot Project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#list-of-subprojects&quot; id=&quot;markdown-toc-list-of-subprojects&quot;&gt;List of Subprojects&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#credits&quot; id=&quot;markdown-toc-credits&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#license&quot; id=&quot;markdown-toc-license&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#supplementary-materials-and-slides&quot; id=&quot;markdown-toc-supplementary-materials-and-slides&quot;&gt;Supplementary Materials and Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;about-oliot&quot;&gt;About Oliot&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/oliot.png&quot; alt=&quot;current-sit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Oliot&lt;/strong&gt; is aiming an international standard based &lt;strong&gt;Internet of Things (IoT) Infrastructure Platform&lt;/strong&gt;, by extending the code system of GS1 and their standard architecture to support various IoT connectivity and protocols such as bar code, 2D DataMatrix, QR Code, RFID, ZigBee, 6Lo, Bluetooth Low Energy, OneM2M, OCF, etc. Oliot also aims a complete implementation of GS1/EPCglobal standard.&lt;/p&gt;
+
+&lt;p&gt;The name of this project, &lt;em&gt;Oliot&lt;/em&gt; is the abbreviation of &lt;em&gt;Open Language for Internet of Things&lt;/em&gt;. Also, &lt;em&gt;oliot&lt;/em&gt; is the plural form of &lt;em&gt;olio&lt;/em&gt;, which means &lt;em&gt;thing&lt;/em&gt; or &lt;em&gt;object&lt;/em&gt; in Finnish, and means stew of various meats and vegetables in Spanish.&lt;/p&gt;
+
+&lt;h2 id=&quot;gs1-and-auto-id-labs&quot;&gt;GS1 and Auto-ID Labs&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;images/Auto-IDLabsLogo.png&quot; alt=&quot;AutoIDLab&quot; /&gt;  &lt;img src=&quot;images/gs1-epcglobal.png&quot; alt=&quot;GS1&quot; /&gt;&lt;br /&gt;
+The term &lt;strong&gt;Internet of Things&lt;/strong&gt; was firstly introduced in 1999 by Kevin Ashton at the Auto-ID Labs, MIT (http://www.autoidlabs.org), which is the primary research partner of GS1.&lt;/p&gt;
+
+&lt;p&gt;GS1 provides various types of codes such as bar code, RFID, 2D DataMatrix code for thing identification, and standardizing system infrastructure for global business and applications (Transport &amp;amp; Logistics, Retail, Healthcare, Fresh Food, Technical Industry, Financial Service, etc.).&lt;/p&gt;
+
+&lt;p&gt;GS1 is making an effort to hold the position of a standard technology for IoT era as well as B2C from B2B via GS1 code extension, GS1 digital, and IoT standard technology development.&lt;/p&gt;
+
+&lt;p&gt;Among seven Auto-ID Labs (MIT, Cambridge, ETH Zurich, Keio, Fudan, Adelaide, KAIST) over the world, Auto-ID Labs, KAIST started research and development in IoT field since 2003, starting from the RFID and wireless sensor network technology. And since 2005, we started to develop various IoT technologies that are specialized to GS1 standard.&lt;/p&gt;
+
+&lt;h2 id=&quot;history-of-oliot-project&quot;&gt;History of Oliot Project&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Oliot 1.2
+    &lt;ul&gt;
+      &lt;li&gt;Oliot EPCIS v1.2: the web-service complying with EPCIS v1.2&lt;/li&gt;
+      &lt;li&gt;ONS management WebApp&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Oliot 1.1
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Oliot EPCIS v1.1: the web-service complying with EPCIS v1.1 (Clean-slate implementation)&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Multi-backend: MongoDB (open), MySQL &amp;amp; MariaDB backend (Developed) and Cassandra (TBD)&lt;/li&gt;
+      &lt;li&gt;Multi-service interface: SOAP, REST and Message Queue&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Oliot 1.0
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Complete implementation of latest GS1 EPCglobal framework&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Run on any clouds that supports mysql and cassandra.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pre-Oliot Projects
+    &lt;ul&gt;
+      &lt;li&gt;GS1 EPCglobal Network on the Cloud for Groceries Trace Framework, since 2013
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Complete Implementation of latest GS1 EPCglobal framework&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;EPCIS Enhanced with NOSQL DB&lt;/li&gt;
+          &lt;li&gt;Cloud Support&lt;/li&gt;
+          &lt;li&gt;Oliot LLRP Server implemented&lt;/li&gt;
+          &lt;li&gt;Geo-discovery Service&lt;/li&gt;
+          &lt;li&gt;ONS 2.0.1 implemented&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Smart Thing Information Service (STIS), since 2011 to 2014
+        &lt;ul&gt;
+          &lt;li&gt;Integrate 6Lo/CoAP/Obix protocol to middleware (without LLRP adaptation)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;EPC Sensor Network (EPCSN), since 2005 to 2011
+        &lt;ul&gt;
+          &lt;li&gt;Expand GS1 EPCglobal Network to integrate various sensor network protocols&lt;/li&gt;
+          &lt;li&gt;Adaptation of Zigbee and 6Lo to LLRP protocol&lt;/li&gt;
+          &lt;li&gt;Complex Event Processing, etc.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;list-of-subprojects&quot;&gt;List of Subprojects&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Oliot EPCIS v1.2 (&lt;a href=&quot;https://github.com/JaewookByun/epcis&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Oliot ONS (&lt;a href=&quot;https://github.com/gs1oliot/oliot-ons-1.1&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Oliot GS1 Source (&lt;a href=&quot;https://github.com/gs1oliot/gs1source&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Oliot DS (&lt;a href=&quot;https://github.com/gs1oliot/oliot-ds-1.1&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Oliot ALE (&lt;a href=&quot;https://github.com/gs1oliot/oliot-fc&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Oliot LLRP Reader (&lt;a href=&quot;https://github.com/gs1oliot/oliot-llrp&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;images/Auto-IDLabsLogo.png&quot; alt=&quot;AutoIDLab&quot; /&gt;  &lt;img src=&quot;images/kaist.png&quot; alt=&quot;KAIST&quot; /&gt;&lt;br /&gt;
+Oliot is maintained by Auto-ID Labs, KAIST, in Daejeon, Korea.
+Related works of this project were funded or aided by following organizations.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GS1 Food Safety Project
+    &lt;ul&gt;
+      &lt;li&gt;Institute for Information &amp;amp; communications Technology Promotion(IITP) funded by the Korea government(MSIP), 2015-2017&lt;/li&gt;
+      &lt;li&gt;Implementing Food Safety System based on the Oliot Project&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C-ITRC Project
+    &lt;ul&gt;
+      &lt;li&gt;MSIT(Ministry of Science and ICT), Korea, under the ITRC(Information Technology Research Center) support program, 2013-&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Wise-IoT
+    &lt;ul&gt;
+      &lt;li&gt;Institute for Information &amp;amp; communications Technology Promotion(IITP) grant funded by the Korea government(MSIP), 2016-&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://wise-iot.eu/&quot;&gt;http://wise-iot.eu/&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;IoF2020 (Internet of Food and Farm 2020)
+    &lt;ul&gt;
+      &lt;li&gt;National Research Foundation of Korea (http://nrf.re.kr) National Research Lab, 2016-&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.iof2020.eu/&quot;&gt;https://www.iof2020.eu/&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;KMIT
+    &lt;ul&gt;
+      &lt;li&gt;Korean company working together for Oliot enterprise service&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.kmit.or.kr&quot;&gt;http://www.kmit.or.kr&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+&lt;p&gt;Oliot is distributed under &lt;a href=&quot;https://www.apache.org/licenses/LICENSE-2.0&quot;&gt;Apache License, Version 2.0&lt;/a&gt;.
+For ONS, we open it with Apache license so that users can use it without any restriction. That is because Oliot-ONS consists of the DNS configuration files to implement ONS.&lt;/p&gt;
+
+&lt;h2 id=&quot;supplementary-materials-and-slides&quot;&gt;Supplementary Materials and Slides&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The Road to Internet of Things&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/the-road-to-internet-of-things&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_the_road_to_internet_of_things.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GS1 EPCglobal framework and Oliot Project Overview&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/gs1-epcglobal-framework-and-oliot-project-overview-oliot-workshop-2014&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_gs1_epcglobal_framework_and_oliot_project_overview.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GS1 Source&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/gs1-source&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_gs1_source.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GS1 Digital&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/gs1-digital&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_gs1_digital.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Oliot LLRP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/gs1oliot-llrp&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_llrp.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Oliot ALE and Next&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/gs1oliot-ale-and-next&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_ale.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Oliot EPCIS and Next&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/gs1oliot-epcis-and-next&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_epcis.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Oliot ONS/DS and Next&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/gs1oliot-onsds-and-next&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_ons_ds.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Oliot Open Source Project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/gatordkim/oliot-open-source-project&quot;&gt;&lt;img src=&quot;http://gs1oliot.github.io/oliot/images/slide_summary/sum_oliot_open_source_project.jpg&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Oliot Facebook Group (&lt;a href=&quot;https://www.facebook.com/groups/oliot/&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Oliot Project</summary></entry><entry><title type="html">Oliot LLRP Documentation</title><link href="http://localhost:4000/overview_llrp.html" rel="alternate" type="text/html" title="Oliot LLRP Documentation" /><published>2014-07-04T00:00:00+09:00</published><updated>2014-07-04T00:00:00+09:00</updated><id>http://localhost:4000/llrp-overview</id><content type="html" xml:base="http://localhost:4000/overview_llrp.html">&lt;h1 id=&quot;oliot-llrp-low-level-reader-protocol-reader&quot;&gt;Oliot LLRP (Low Level Reader Protocol) Reader&lt;/h1&gt;
+
+&lt;p&gt;Oliot LLRP Reader is a reader implementation that supports EPCglobal Low Level Reader Protocol (LLRP).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/llrp-pics/llrp-pic5.png&quot; alt=&quot;llrp-img-5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;LLRP is a protocol between ALE Server and RFID Reader which,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;defines control of RFID readers up to low level details of RFID&lt;/li&gt;
+  &lt;li&gt;defines inventory, read, write, and other access commands for tags&lt;/li&gt;
+  &lt;li&gt;defines capabilities of reader device&lt;/li&gt;
+  &lt;li&gt;defines status reporting and error handling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/llrp-pics/llrp-pic1.png&quot; alt=&quot;llrp-img-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Oliot LLRP Reader is a reader implementation that supports LLRP standard with some extentions. It is composed of following components&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/llrp-pics/llrp-pic3.png&quot; alt=&quot;llrp-img-3&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Core Operational Component
+    &lt;ul&gt;
+      &lt;li&gt;Core operations of LLRP and other supplementary operations&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Structural Abstraction Component
+    &lt;ul&gt;
+      &lt;li&gt;Abstracts the structure of the real-world reader&lt;/li&gt;
+      &lt;li&gt;Useful for extension of current LLRP standard&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Communicational Abstraction Component
+    &lt;ul&gt;
+      &lt;li&gt;Abstracts the communication with the real-world reader&lt;/li&gt;
+      &lt;li&gt;Useful for supporting various kinds of Tag Readers&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Messaging Component
+    &lt;ul&gt;
+      &lt;li&gt;Abstracts LLRP messaging between reader and ALE server&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Oliot LLRP Reader is able to support adaptation of various kinds of connectivity and protocols. So if a thing has its own unique GS1 code, it can be collected by reader with some adaptation and utilized within EPCglobal framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/llrp-pics/llrp-pic4.png&quot; alt=&quot;llrp-img-4&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sehyeon Heo, Ph.D student of KAIST&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gs1oliot/oliot-llrp&quot;&gt;&lt;img src=&quot;images/viewon.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Oliot LLRP (Low Level Reader Protocol) Reader</summary></entry><entry><title type="html">Oliot Discovery Service Documentation</title><link href="http://localhost:4000/overview_geods.html" rel="alternate" type="text/html" title="Oliot Discovery Service Documentation" /><published>2014-07-04T00:00:00+09:00</published><updated>2014-07-04T00:00:00+09:00</updated><id>http://localhost:4000/geods-overview</id><content type="html" xml:base="http://localhost:4000/overview_geods.html">&lt;h1 id=&quot;oliot-ds-discovery-service&quot;&gt;Oliot DS (Discovery Service)&lt;/h1&gt;
+
+&lt;p&gt;Oliot DS is an implementation of EPCglobal Discovery Service. It provides the service to find the physical locations of desired GS1 ID embedded products inner distance radius from current location. If the user gives GS1 ID, time period, and size of distance radius to Oliot DS, it shows the markers corresponding the physical locations of the products on the google maps satisfying the given conditions.  The architecture of Oliot DS is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/ds-pics/oliot-ds-img1.png&quot; alt=&quot;img6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Firstly, events captured from things are registered to Oliot DS through EPCISs. Then, the client gets the address of Oliot DS from ONS. By using the address receiving from ONS, it queries the physical locations of products embedding the given GS1 ID to Oliot DS. Finally, Oliot DS gives the desired information to the client and the browser shows the physical locations on the google maps.&lt;/p&gt;
+
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Kiwoong Kwon, Ph.D student of KAIST&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gs1oliot/oliot-ds-1.1&quot;&gt;&lt;img src=&quot;images/viewon.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Oliot DS (Discovery Service)</summary></entry><entry><title type="html">Oliot F&amp;amp;C Documentation</title><link href="http://localhost:4000/overview_fnc.html" rel="alternate" type="text/html" title="Oliot F&amp;C Documentation" /><published>2014-07-04T00:00:00+09:00</published><updated>2014-07-04T00:00:00+09:00</updated><id>http://localhost:4000/fc-overview</id><content type="html" xml:base="http://localhost:4000/overview_fnc.html">&lt;h1 id=&quot;oliot-ale-application-level-event&quot;&gt;Oliot ALE (Application Level Event)&lt;/h1&gt;
+
+&lt;p&gt;Oliot ALE is an implementation of EPCglobal Application Level Events (ALE) interface which provides APIs for filtering and grouping radio frequency identification (RFID) based data.&lt;br /&gt;
+Oliot ALE is forked from the Fosstrak Filtering and Collection project. The objective of this fork is to develop EPCglobal-architecture-based IoT platform under the vision of Auto-ID Labs, KAIST.&lt;/p&gt;
+
+&lt;p&gt;In Oliot, Oliot ALE is located in the middleware position as shown above. Extending the idea of ALE middleware, we will generalize Oliot ALE middleware role to process stream-based raw data from various devices to generate refined high-level events following GS1 standard.The data from these various devices is abstracted to a concept of stream, for which we will develop stream processing feature.&lt;/p&gt;
+
+&lt;p&gt;In the current stage, we developed Oliot filtering and collection to implement ALE interface fully based on Fosstrak fc project. We compared ours with Fosstrak in the following table. We developed newly 3 APIs: Writing API, Tag Memory API, Access Control API, and developed reader initiated connection feature for IoT use case.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/fc-comparison.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are 4 subprojects in Oliot ALE.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fc-client
+    &lt;ul&gt;
+      &lt;li&gt;ALE client program for Oliot ALE. It includes Java Swing based user interface. We added API example class to use Writing, Tag Memory, and Access Control API. Swing-based user interface to use newly implemented features is our future work on this project.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;fc-commons
+    &lt;ul&gt;
+      &lt;li&gt;Oliot ALE common components such as web service components, and serializer/deserializer utilities. We added serializer and deserializer utils for TMSpec API, Writing API.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;fc-server
+    &lt;ul&gt;
+      &lt;li&gt;A main server project of Oliot ALE. Its role includes processing requests from ALE clients, accepting reader connections, generating reports and so on. We implemented newly supported features in this project.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;fc-webclient
+    &lt;ul&gt;
+      &lt;li&gt;ALE web based client program for Oliot ALE. The compiled binaries can be embedded to the servlet container Tomcat, and they can be access by web browser. There is no modification on this project, but we will implement web based client for Writing, Tag Memory, and Access Control API as our future work.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Janggwan Im, Ph.D student of KAIST&lt;/li&gt;
+  &lt;li&gt;Wondeuk Yoon, Ph.D student of KAIST&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gs1oliot/oliot-fc&quot;&gt;&lt;img src=&quot;images/viewon.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Oliot ALE (Application Level Event)</summary></entry><entry><title type="html">Oliot EPCIS Documentation</title><link href="http://localhost:4000/overview_epcis.html" rel="alternate" type="text/html" title="Oliot EPCIS Documentation" /><published>2014-07-04T00:00:00+09:00</published><updated>2014-07-04T00:00:00+09:00</updated><id>http://localhost:4000/epcis-overview</id><content type="html" xml:base="http://localhost:4000/overview_epcis.html">&lt;h1 id=&quot;oliot-epcis-epc-information-service&quot;&gt;Oliot EPCIS (EPC Information Service)&lt;/h1&gt;
+&lt;p&gt;Electronic Product Code Information Service (EPCIS) enables to capture and share visibility event and masterdata depicting lifecycle of everyday-objects. With EPCIS, event producer generates and sends events complying with EPCIS Document XML schema into EPCIS Repository Then, these events can be globally shared with given queries.&lt;/p&gt;
+
+&lt;p&gt;Oliot EPCIS is a Java Web Service implementing the EPCIS standard in terms of its data type and interface standards and additionally supports additional features to broaden its scope from RFID to the Internet of Things.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/epcis-pics/architecture2.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;specification&quot;&gt;Specification&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Java, Dynamic Web Service&lt;/li&gt;
+  &lt;li&gt;EPCIS v1.2 compliance&lt;/li&gt;
+  &lt;li&gt;Maven and Spring framework&lt;/li&gt;
+  &lt;li&gt;Supported backends: MongoDB, Relational DBMSs (MySQL, MariaDB, Oracle, and PostgreSQL)&lt;/li&gt;
+  &lt;li&gt;Supported web service interface: SOAP, REST&lt;/li&gt;
+  &lt;li&gt;Supported message format: XML, JSON&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Jaewook Byun, Maintainer  : bjw0829@kaist.ac.kr, bjw0829@gmail.com&lt;/li&gt;
+  &lt;li&gt;Yalew Kidane, MySQL Backend Extension : yalewkidane@kaist.ac.kr, yalewkidane@gmail.com&lt;/li&gt;
+  &lt;li&gt;Sungpil Woo, Capture Interface Extension : woosungpil@kaist.ac.kr, woosungpil7@gmail.com&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/JaewookByun/epcis&quot;&gt;&lt;img src=&quot;images/viewon.png&quot; alt=&quot;thumbnail&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Oliot EPCIS (EPC Information Service) Electronic Product Code Information Service (EPCIS) enables to capture and share visibility event and masterdata depicting lifecycle of everyday-objects. With EPCIS, event producer generates and sends events complying with EPCIS Document XML schema into EPCIS Repository Then, these events can be globally shared with given queries.</summary></entry></feed>

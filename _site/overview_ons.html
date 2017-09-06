@@ -1,0 +1,15 @@
+<h1 id="oliot-ons-object-name-service">Oliot ONS (Object Name Service)</h1>
+
+<p>Object Name Service (ONS) is service look-up system on top of Directory Naming Service (DNS). It is located in higher layer of EPC global architecture [http://www.gs1.org/epcglobal]. Briefly, this service have a responsibility of looking up services related to given Electronic Product Code (EPC).</p>
+
+<p>It should be noted that ONS fully leverages DNS. As a service publisher, you need to add/delete/update service lists related to give EPC as a NAPTR Record form [http://www.ietf.org/rfc/rfc2915.txt], leading clients to obtain them by ordinary DNS query (e.g. <a href="http://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html">Java JNDI</a>.</p>
+
+<p>For more information, please refer to <a href="http://www.gs1.org/gsmp/kc/epcglobal/ons/ons_2_0_1-standard-20130131.pdf">ONS 2.0.1 specification</a></p>
+
+<h2 id="contributors">Contributors</h2>
+<ul>
+  <li>Kiwoong Kwon, Ph.D student of KAIST</li>
+  <li>Wondeuk Yoon, Ph.D student of KAIST</li>
+</ul>
+
+<p><a href="https://github.com/gs1oliot/oliot-ons-1.1"><img src="images/viewon.png" alt="thumbnail" /></a></p>

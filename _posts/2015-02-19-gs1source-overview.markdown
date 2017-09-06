@@ -18,5 +18,8 @@ GS1 Source is a framework for sharing product data in digital world and provides
 
 ![thumbnail](images/gs1source-pics/DataAggregator_v2_3.png)
 
-[![thumbnail](images/viewon.png)][repo_url]  
-[repo_url]: https://github.com/gs1oliot/gs1source
+## Contributors
+ * Hyeeun Cho, Master student of KAIST
+ * Gaurav Kalra, Master student of KAIST
+ 
+[![thumbnail](images/viewon.png)](https://github.com/gs1oliot/gs1source)
