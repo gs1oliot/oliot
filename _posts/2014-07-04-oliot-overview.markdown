@@ -1,12 +1,3 @@
----
-permalink: overview_oliot.html
-layout: default
-
-title: Oliot LLRP Documentation
----
-<!--
-[English](http://www.google.com) [한국어](http://www.google.com)
--->
 # Oliot Project
 {:.no_toc}
  
