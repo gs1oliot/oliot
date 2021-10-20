@@ -28,4 +28,4 @@ Oliot EPCIS is a Java Web Service implementing the EPCIS standard in terms of it
  * Sungpil Woo, Capture Interface Extension : woosungpil@kaist.ac.kr, woosungpil7@gmail.com
 
 
-[![thumbnail](images/viewon.png)](https://github.com/gs1oliot/epcis)
+[![thumbnail](images/viewon.png)](https://github.com/JaewookByun/epcis)
