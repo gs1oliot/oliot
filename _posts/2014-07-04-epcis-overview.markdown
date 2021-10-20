@@ -24,7 +24,7 @@ Oliot EPCIS is a Java Web Service implementing the EPCIS standard in terms of it
 
 ## Contributors
  * Jaewook Byun, Maintainer  : bjw0829@kaist.ac.kr, bjw0829@gmail.com
- * Yalew Kidane, MySQL Backend Extension : yalewkidane@kaist.ac.kr, yalewkidane@gmail.com
+ * Yalew Kidane Tolcha, MySQL Backend Extension : yalewkidane@kaist.ac.kr, yalewkidane@gmail.com
  * Sungpil Woo, Capture Interface Extension : woosungpil@kaist.ac.kr, woosungpil7@gmail.com
 
 
